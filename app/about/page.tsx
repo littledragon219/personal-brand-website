@@ -14,7 +14,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-gray-900 mb-6">关于我</h1>
             <p className="text-xl text-gray-600">
-              从传统文化到前沿科技，从团队协作到技术创新的探索之旅
+              从中国传统文化到前沿科技，从团队协作到技术创新的探索之旅
             </p>
           </div>
 
@@ -30,15 +30,15 @@ export default function AboutPage() {
                       <span className="text-xl">🐉</span>
                     </div>
                     <div>
-                      <CardTitle>传统文化的具身体验</CardTitle>
+                      <CardTitle>中国传统文化的具身体验</CardTitle>
                       <CardDescription>2024年第十六届中国大学生舞龙舞狮锦标赛全国季军</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    作为部长/学生教练/龙珠，我带领团队坚持每周三天早上6点30分训练，将传统文化与现代体育竞技精神结合。
-                    在全国42支参赛队伍中脱颖而出，勇夺季军。这体现了理论与实践、身体与心智结合的"具身"精神。
+                    作为部长/学生教练/龙珠，我带领团队坚持每周，三天早上6点30分训练，将传统文化与现代体育竞技精神结合。
+                    在全国大学生参赛队伍中脱颖而出，勇夺季军。这体现了理论与实践、身体与心智结合的"具身"精神。
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="outline">团队协作</Badge>
@@ -122,7 +122,7 @@ export default function AboutPage() {
                     在42队中脱颖而出进入校赛决赛。
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="outline">Arduino开发</Badge>
+                    <Badge variant="outline">Arduino算法开发</Badge>
                     <Badge variant="outline">电路设计</Badge>
                     <Badge variant="outline">商业决策</Badge>
                     <Badge variant="outline">跨专业合作</Badge>

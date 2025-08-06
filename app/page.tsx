@@ -118,8 +118,8 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">我是谁</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              你好，我是<strong className="text-blue-600">曾德荣</strong>。一名来自西安交通大学的准机械工程师，也是一位热情的AI产品探索者。
-              我着迷于将前沿AI技术融入物理实体，创造真正有用的智能工具。从舞龙舞狮的团队协作到智能机械臂的算法开发，
+              你好，我是<strong className="text-blue-600">曾德荣</strong>。一名来自马来西亚，现就读西安交通大学大三本科机械工程（智能制造），也是一位热情的AI产品探索者。
+              我着迷于将前沿AI技术融入物理实体，创造真正有用的智能工具。从机械故障诊断的深度学习到智能无损抓取机械臂的算法开发，
               我始终在探索"具身智能"的无限可能。
             </p>
             <div className="grid md:grid-cols-3 gap-8 pt-8">
@@ -175,11 +175,11 @@ export default function HomePage() {
                     <p className="text-gray-600">
                       研发"触觉感知-柔性控制-特征迁移"三位一体系统，配合树莓派主控与舵机协同，
                       开发动态闭环力控算法实时感知物体，以<strong className="text-green-600 animate-pulse">0.01N的力控分辨率</strong>实现精准控制达到智能无损抓取。
-                      在2025年大学生创新大赛校赛中荣获银奖。
+                      在2025年大学生创新大赛西交大校赛中荣获银奖。
                     </p>
                     
                     <div className="flex flex-wrap gap-2">
-                      {["力控算法", "原型网络", "零样本推理", "树莓派", "ROS", "Python"].map((tag, index) => (
+                      {["力控算法", "原型网络", "零样本推理", "树莓派", "领域泛化", "Python"].map((tag, index) => (
                         <Badge key={index} variant="outline" className="hover:bg-blue-50 hover:border-blue-300 transition-colors cursor-pointer">
                           {tag}
                         </Badge>
@@ -288,7 +288,7 @@ export default function HomePage() {
             </h2>
             <p className="text-xl text-blue-100">
               如果你对具身智能、AI产品或机器人技术感兴趣，期待与你交流。
-              如果有合适的工作机会，也欢迎随时联系我。
+              如果有合适的工作或实习机会，也欢迎随时联系我。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-lg" asChild>
