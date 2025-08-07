@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Textarea } from "@/components/ui/textarea"
-import { ArrowLeft, Calendar, Clock, Eye, Heart, MessageCircle, Share2, Bookmark, TrendingUp, Target, Zap } from 'lucide-react'
+import { ArrowLeft, Calendar, Clock, Eye, Heart, MessageCircle, Share2, Bookmark, TrendingUp, Target, Zap, ArrowRight } from 'lucide-react'
 import Link from "next/link"
 
 export default function TeslaOptimusAnalysisPage() {
