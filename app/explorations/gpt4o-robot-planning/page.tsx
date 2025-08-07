@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowLeft, ArrowRight, Calendar, Clock, Eye, Heart, MessageCircle, Share2, Bookmark, Lightbulb, Target, Zap } from 'lucide-react'
 import Link from "next/link"
+import { ThumbsUp } from 'lucide-react'; 
 
 export default function GPT4oRobotPlanningPage() {
   const [comment, setComment] = useState("")
