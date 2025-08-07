@@ -121,3 +121,54 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* 自定义动画 */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* 粒子连接线动画 */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+.animate-dash {
+  stroke-dasharray: 5 5;
+  animation: dash 20s linear infinite;
+}
+
+/* 发光效果 */
+.glow {
+  box-shadow: 0 0 20px rgba(20, 184, 166, 0.3);
+}
+
+.glow:hover {
+  box-shadow: 0 0 30px rgba(20, 184, 166, 0.5);
+}
+
+/* 渐变文字动画 */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #14b8a6, #22d3ee, #3b82f6, #14b8a6);
+  background-size: 400% 400%;
+  animation: gradient-shift 3s ease infinite;
+}
