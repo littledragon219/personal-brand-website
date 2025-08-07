@@ -55,7 +55,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-teal-500/30 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 曾德荣. 保留所有权利.</p>
+          <p>&copy; 2025 曾德荣. 保留所有权利.</p>
         </div>
       </div>
     </footer>

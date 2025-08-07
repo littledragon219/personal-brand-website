@@ -38,7 +38,7 @@ export default function IntelligentGraspingRobotPage() {
                 <div className="text-sm text-gray-600">力控分辨率</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-green-600">99.5%</div>
+                <div className="text-2xl font-bold text-green-600">92.5%</div>
                 <div className="text-sm text-gray-600">无损抓取成功率</div>
               </div>
               <div className="text-center">
@@ -74,7 +74,7 @@ export default function IntelligentGraspingRobotPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">项目周期</h4>
-                    <p className="text-gray-600">2024年3月 - 2025年1月</p>
+                    <p className="text-gray-600">2024年5月 - 2025年5月</p>
                   </div>
                 </div>
                 
@@ -230,7 +230,7 @@ export default function IntelligentGraspingRobotPage() {
                         </div>
                         <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
                           <span className="text-blue-800">无损抓取成功率</span>
-                          <span className="font-bold text-blue-600">99.5%</span>
+                          <span className="font-bold text-blue-600">92.5%</span>
                         </div>
                         <div className="flex items-center justify-between p-3 bg-purple-50 rounded-lg">
                           <span className="text-purple-800">获奖情况</span>
@@ -248,15 +248,15 @@ export default function IntelligentGraspingRobotPage() {
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-500 mt-1">✓</span>
-                          <span>相关技术已申请发明专利</span>
+                          <span>验证了领域泛化在农业的可行性</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-500 mt-1">✓</span>
-                          <span>为工业自动化提供了新的技术路径</span>
+                          <span>为农业智能化提供了新的技术路径</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="text-green-500 mt-1">✓</span>
-                          <span>验证了具身智能在实际应用中的可行性</span>
+                          <span>验证了触觉感知在实际应用中的可行性</span>
                         </li>
                       </ul>
                     </div>

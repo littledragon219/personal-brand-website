@@ -184,7 +184,7 @@ export default function HomePage() {
                     <Brain className="w-8 h-8 text-teal-400" />
                   </div>
                   <div>
-                    <h1 className="text-2xl font-bold text-white">曾德荣 / ZENGDERONG</h1>
+                    <h1 className="text-2xl font-bold text-white">曾德荣 / CHIN TECK WENG</h1>
                     <p className="text-teal-400">具身智能探索者与构建者</p>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ export default function HomePage() {
                   </p>
                   
                   <p className="text-gray-400">
-                    西安交通大学数字媒体技术专业2026届毕业生，专注于将创意思维与AI技术相结合，创造有温度的智能产品。
+                    西安交通大学机械工程（智能制造）专业2026届毕业生，专注于将工程思维与AI技术相结合，创造有温度的智能产品。
                   </p>
                 </div>
 
@@ -214,7 +214,7 @@ export default function HomePage() {
                   </Badge>
                   <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-400/50 hover:bg-cyan-500/30 transition-colors">
                     <Zap className="w-3 h-3 mr-1" />
-                    交互设计
+                    算法设计
                   </Badge>
                   <Badge className="bg-blue-500/20 text-blue-300 border-blue-400/50 hover:bg-blue-500/30 transition-colors">
                     <Brain className="w-3 h-3 mr-1" />
@@ -225,16 +225,16 @@ export default function HomePage() {
                 {/* 统计数据 */}
                 <div className="grid grid-cols-3 gap-6 mt-8 p-6 bg-slate-900/50 rounded-xl border border-teal-500/20">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-teal-400 mb-1">50+</div>
-                    <div className="text-sm text-gray-400">服务用户(万)</div>
+                    <div className="text-3xl font-bold text-teal-400 mb-1">4+</div>
+                    <div className="text-sm text-gray-400">科研项目(个)</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-cyan-400 mb-1">92</div>
-                    <div className="text-sm text-gray-400">准确率(%)</div>
+                    <div className="text-3xl font-bold text-cyan-400 mb-1">20+</div>
+                    <div className="text-sm text-gray-400">志愿经历(个)</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-blue-400 mb-1">70</div>
-                    <div className="text-sm text-gray-400">效率提升(%)</div>
+                    <div className="text-3xl font-bold text-blue-400 mb-1">3</div>
+                    <div className="text-sm text-gray-400">实习经历(个)</div>
                   </div>
                 </div>
 
@@ -281,11 +281,11 @@ export default function HomePage() {
                 <div className="flex flex-wrap gap-2 mt-6">
                   <div className="flex items-center gap-2 text-sm text-yellow-400">
                     <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" />
-                    东方设计奖团一等奖
+                    交大大学生创新大赛校赛银奖
                   </div>
                   <div className="flex items-center gap-2 text-sm text-green-400">
                     <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                    校大学生艺术团部长
+                    交大舞龙队部长兼学生教练
                   </div>
                 </div>
 
@@ -394,7 +394,7 @@ export default function HomePage() {
             <div className="max-w-4xl mx-auto text-center space-y-6">
               <h2 className="text-3xl font-bold text-white mb-8">我是谁</h2>
               <p className="text-lg text-gray-300 leading-relaxed">
-                你好，我是<strong className="text-teal-400">曾德荣</strong>。一名来自马来西亚，现就读西安交通大学大三本科机械工程（智能制造），也是一位热情的AI产品探索者。
+                你好，我是<strong className="text-teal-400">曾德荣</strong>。一名来自马来西亚，现就读西安交通大学大四本科机械工程（智能制造），也是一位热情的AI产品探索者。
                 我着迷于将前沿AI技术融入物理实体，创造真正有用的智能工具。从机械故障诊断的深度学习到智能无损抓取机械臂的算法开发，
                 我始终在探索"具身智能"的无限可能。
               </p>

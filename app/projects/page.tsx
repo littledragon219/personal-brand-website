@@ -189,9 +189,9 @@ export default function ProjectsPage() {
                         <div className="space-y-2">
                           <h4 className="font-semibold text-white">核心成果：</h4>
                           <ul className="text-sm text-gray-300 space-y-1">
-                            <li>• 0.01N的力控分辨率，99.5%无损抓取成功率</li>
+                            <li>• 0.01N的力控分辨率，92.5%无损抓取成功率</li>
                             <li>• 获得2025年大学生创新大赛校赛银奖</li>
-                            <li>• 相关技术已申请发明专利</li>
+                            <li>• 获得学院科研训练项目92分高分</li>
                           </ul>
                         </div>
                         
