@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Textarea } from "@/components/ui/textarea"
-import { ArrowLeft, ArrowRight, Calendar, Clock, Eye, Heart, MessageCircle, Share2, Bookmark, ThumbsUp } from 'lucide-react'
-import Link from "next/link"
+import { ArrowLeft, ArrowRight, Calendar, Clock, Eye, Heart, MessageCircle, Share2, Bookmark, ThumbsUp, Lightbulb, Target, Zap } from 'lucide-react'
+import Link from "next/link" 
 
 export default function GPT4oRobotPlanningPage() {
   const [comment, setComment] = useState("")
