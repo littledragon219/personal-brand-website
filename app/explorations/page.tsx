@@ -18,6 +18,20 @@ export default function ExplorationsPage() {
   
   const articles = [
     {
+      id: "google-notebooklm-review",
+      title: "对Google NotebookLM深度体验的报告",
+      excerpt: "在AI 2.0时代，从追求模型的'无限创造力'转向追求应用的'绝对可靠性'。深度体验Google NotebookLM后，我发现它的'源于个人信息'模式能有效杜绝信息幻觉，音频总览功能更是知识消费方式的革命...",
+      category: "AI工具评测",
+      date: "2024.01.20",
+      readTime: "15分钟",
+      views: 2156,
+      likes: 178,
+      comments: 45,
+      tags: ["NotebookLM", "Google", "知识管理", "RAG", "音频总览"],
+      featured: true,
+      gradient: "from-emerald-500/20 to-teal-500/20"
+    },
+    {
       id: "gpt4o-robot-planning",
       title: "GPT-4o在机器人任务规划中的应用",
       excerpt: "深度评测GPT-4o在复杂机器人任务规划中的表现，探讨大语言模型如何赋能具身智能。通过实际案例分析，我发现GPT-4o在理解复杂空间关系和多步骤任务分解方面表现出色...",

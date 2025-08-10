@@ -113,9 +113,9 @@ export default function ContactPage() {
                     </CardHeader>
                     <CardContent className="space-y-6">
                       {[
-                        { icon: Mail, title: "邮箱", content: "chinweng219@gmail.com", colorClasses: "from-blue-500/20 to-cyan-500/20" },
-                        { icon: MessageCircle, title: "微信", content: "derongchin", colorClasses: "from-green-500/20 to-emerald-500/20" },
-                        { icon: MapPin, title: "位置", content: "西安, 中国", colorClasses: "from-purple-500/20 to-pink-500/20" }
+                        { icon: Mail, title: "邮箱", content: ".", colorClasses: "from-blue-500/20 to-cyan-500/20" },
+                        { icon: MessageCircle, title: "微信", content: ".", colorClasses: "from-green-500/20 to-emerald-500/20" },
+                        { icon: MapPin, title: "位置", content: "中国", colorClasses: "from-purple-500/20 to-pink-500/20" }
                       ].map((item, index) => (
                         <div key={index} className="flex items-center gap-4 group cursor-pointer">
                           <div className={`w-12 h-12 bg-gradient-to-br ${item.colorClasses} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
