@@ -7,6 +7,14 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 import { BackgroundEffects } from "@/components/background-effects"
 
 const journeyItems = [
+    {
+    icon: "💼",
+    title: "AI2.0产品经理课程",
+    subtitle: "Thoughtworks x 电子科技大学联合打造AI2.0产品经理实战培养计划",
+    description: "通过这个AI2.0产品经理课程，我基本掌握了作为这个岗位所要面对的问题与工作的内容，包括一开始的创意点子的冒起，到十大原则、PRD文档书写、开始使用AI工具打磨赋能，一步步优化成我们想要的成品。另外也学习到了如何建立自己的个人网页，来总结我们的经历，以此增强别人对我们的第一印象。后面我们还学习到了supabase和配置api keys来调用大模型，为我们的产品实现智能化与自动化。在学习的当儿，我总是需要使用更多的课外时间去实践，哪怕我是工科专业。这是因为学习机械工程和这个与AI和前后端代码和数据库等处理都是平日里上课不会接触到的东西，所以往往需要很多时间去学习。但是现在回过头来看，我也发现我学习到了很多，至少了解了AI产品从0-1的流程开发，知道要到哪些网站或渠道找到我想要的资料。现在想想，过程有点辛苦，但是能摸到AI产品的门道和体验AI产品经理的一部分工作日常，感觉还是挺值的。",
+    tags: ["团队协作", "AI工具", "产品需求文档", "产品设计与打造"],
+    colorClasses: "from-red-500/20 to-orange-500/20"
+  },
   {
     icon: "🐉",
     title: "中国传统文化的具身体验",
