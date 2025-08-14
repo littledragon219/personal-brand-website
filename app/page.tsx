@@ -304,15 +304,15 @@ export default function HomePage() {
             <div className={`relative transition-all duration-1000 delay-300 ${isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
               <div className="relative h-96 lg:h-[600px]">
                 {/* 中心演示区域 */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-teal-500/30 shadow-2xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:scale-105 video-container">
+                <div className="absolute inset-0 flex items-center justify-center px-4">
+                  <div className="relative bg-slate-800/30 backdrop-blur-sm rounded-2xl p-4 lg:p-8 border border-teal-500/30 shadow-2xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:scale-105 video-container w-full max-w-md lg:max-w-none">
                     <div className="relative">
                       <Image
                         src="/智能无损抓取.jpg"
                         alt="智能无损抓取机械臂演示"
                         width={400}
                         height={300}
-                        className="rounded-lg"
+                        className="rounded-lg w-full h-auto"
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-lg">
                         <Button 
@@ -323,8 +323,8 @@ export default function HomePage() {
                             video.src = '/intelligent-grasping-robot-demo.mp4';
                             video.controls = true;
                             video.autoplay = true;
-                            video.style.width = '400px';
-                            video.style.height = '300px';
+                            video.style.width = '100%';
+                            video.style.height = 'auto';
                             video.style.borderRadius = '8px';
                             const container = document.querySelector('.video-container');
                             if (container) {
@@ -340,8 +340,8 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* 浮动的技能卡片 */}
-                <div className="absolute top-10 right-10 transform hover:scale-110 transition-all duration-300">
+                {/* 浮动的技能卡片 - 在移动端隐藏 */}
+                <div className="absolute top-10 right-10 transform hover:scale-110 transition-all duration-300 hidden lg:block">
                   <Card 
                     className="w-32 h-32 bg-slate-800/50 backdrop-blur-sm border-teal-500/30 hover:border-teal-400/50 cursor-pointer"
                     onMouseEnter={() => setHoveredCard(1)}
@@ -355,7 +355,7 @@ export default function HomePage() {
                   </Card>
                 </div>
 
-                <div className="absolute bottom-20 left-10 transform hover:scale-110 transition-all duration-300">
+                <div className="absolute bottom-20 left-10 transform hover:scale-110 transition-all duration-300 hidden lg:block">
                   <Card 
                     className="w-32 h-32 bg-slate-800/50 backdrop-blur-sm border-cyan-500/30 hover:border-cyan-400/50 cursor-pointer"
                     onMouseEnter={() => setHoveredCard(2)}
@@ -369,7 +369,7 @@ export default function HomePage() {
                   </Card>
                 </div>
 
-                <div className="absolute top-1/2 left-0 transform -translate-y-1/2 hover:scale-110 transition-all duration-300">
+                <div className="absolute top-1/2 left-0 transform -translate-y-1/2 hover:scale-110 transition-all duration-300 hidden lg:block">
                   <Card 
                     className="w-32 h-32 bg-slate-800/50 backdrop-blur-sm border-blue-500/30 hover:border-blue-400/50 cursor-pointer"
                     onMouseEnter={() => setHoveredCard(3)}
@@ -383,8 +383,8 @@ export default function HomePage() {
                   </Card>
                 </div>
 
-                {/* 连接线动画 */}
-                <svg className="absolute inset-0 w-full h-full pointer-events-none">
+                {/* 连接线动画 - 在移动端隐藏 */}
+                <svg className="absolute inset-0 w-full h-full pointer-events-none hidden lg:block">
                   <defs>
                     <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                       <stop offset="0%" stopColor="rgb(20, 184, 166)" stopOpacity="0.3" />
