@@ -49,7 +49,7 @@ export default function IntelligentGraspingRobotPage() {
 
             <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-8">
               <Image
-                src="/placeholder.svg?height=400&width=800"
+                src="/intelligent-grasping-robot.png"
                 alt="智能无损抓取机械臂演示"
                 fill
                 className="object-cover"

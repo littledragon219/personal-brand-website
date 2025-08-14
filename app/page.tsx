@@ -305,18 +305,37 @@ export default function HomePage() {
               <div className="relative h-96 lg:h-[600px]">
                 {/* 中心演示区域 */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-teal-500/30 shadow-2xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:scale-105">
-                    <Image
-                      src="/placeholder.svg?height=300&width=400&text=智能无损抓取机器人演示"
-                      alt="智能无损抓取机器人演示"
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Button size="lg" className="bg-teal-500/90 hover:bg-teal-500 text-white shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-200">
-                        <Play className="mr-2 h-5 w-5" /> 观看演示
-                      </Button>
+                  <div className="relative bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-teal-500/30 shadow-2xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:scale-105 video-container">
+                    <div className="relative">
+                      <Image
+                        src="/intelligent-grasping-robot.png"
+                        alt="智能无损抓取机械臂演示"
+                        width={400}
+                        height={300}
+                        className="rounded-lg"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-lg">
+                        <Button 
+                          size="lg" 
+                          className="bg-teal-500/90 hover:bg-teal-500 text-white shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-200"
+                          onClick={() => {
+                            const video = document.createElement('video');
+                            video.src = '/intelligent-grasping-robot-demo.mp4';
+                            video.controls = true;
+                            video.autoplay = true;
+                            video.style.width = '400px';
+                            video.style.height = '300px';
+                            video.style.borderRadius = '8px';
+                            const container = document.querySelector('.video-container');
+                            if (container) {
+                              container.innerHTML = '';
+                              container.appendChild(video);
+                            }
+                          }}
+                        >
+                          <Play className="mr-2 h-5 w-5" /> 观看演示
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </div>

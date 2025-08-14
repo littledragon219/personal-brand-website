@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       id: "intelligent-grasping-robot",
       title: "智能无损抓取机械臂",
       description: '"触觉感知-柔性控制-特征迁移"三位一体系统',
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/intelligent-grasping-robot.png",
       tags: ["力控算法", "原型网络", "零样本推理", "树莓派", "ROS"],
       status: "核心项目",
       achievements: ["0.01N力控分辨率", "99.5%无损抓取率", "大学生创新大赛银奖"],
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
       id: "residual-fault-diagnosis",
       title: "深度残差学习故障诊断",
       description: "基于1D-CNN的旋转机械故障智能识别",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/residual-fault-diagnosis.png",
       tags: ["1D-CNN", "残差网络", "轴承数据", "故障分类"],
       status: "学习项目",
       achievements: ["梯度问题解决", "高分类精度", "算法复现验证"],
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
       id: "dragon-dance",
       title: "舞龙舞狮锦标赛",
       description: "2024年第十六届中国大学生舞龙舞狮锦标赛全国季军",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/loongdance.jpg",
       tags: ["团队协作", "传统文化", "体育竞技", "领导力"],
       status: "文体活动",
       achievements: ["全国季军", "42支队伍竞争", "团队默契配合"],
@@ -163,7 +163,7 @@ export default function ProjectsPage() {
                   <div className="grid lg:grid-cols-2">
                     <div className="relative h-64 lg:h-full overflow-hidden">
                       <Image
-                        src="/placeholder.svg?height=400&width=600"
+                        src="/intelligent-grasping-robot.png"
                         alt="智能无损抓取机械臂"
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"

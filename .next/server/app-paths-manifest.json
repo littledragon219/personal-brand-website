@@ -1,5 +1,7 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/explorations/page": "app/explorations/page.js",
-  "/explorations/google-notebooklm-review/page": "app/explorations/google-notebooklm-review/page.js"
+  "/projects/intelligent-grasping-robot/page": "app/projects/intelligent-grasping-robot/page.js",
+  "/projects/page": "app/projects/page.js",
+  "/explorations/page": "app/explorations/page.js"
 }
