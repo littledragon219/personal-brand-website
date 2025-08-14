@@ -308,7 +308,7 @@ export default function HomePage() {
                   <div className="relative bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-teal-500/30 shadow-2xl hover:shadow-teal-500/20 transition-all duration-300 transform hover:scale-105 video-container">
                     <div className="relative">
                       <Image
-                        src="/intelligent-grasping-robot.png"
+                        src="/智能无损抓取.jpg"
                         alt="智能无损抓取机械臂演示"
                         width={400}
                         height={300}
@@ -449,7 +449,7 @@ export default function HomePage() {
                 <div className="grid lg:grid-cols-2">
                   <div className="relative h-64 lg:h-full overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=400&width=600&text=智能无损抓取机械臂"
+                      src="/智能无损抓取.jpg"
                       alt="智能无损抓取机器人"
                       fill
                       className="object-cover hover:scale-110 transition-transform duration-500"

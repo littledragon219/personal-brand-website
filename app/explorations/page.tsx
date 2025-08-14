@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { ArrowRight, Search, Calendar, Tag, Eye, Heart, MessageCircle } from 'lucide-react'
 import Link from "next/link"
+import Image from "next/image"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { BackgroundEffects } from "@/components/background-effects"
 
@@ -29,6 +30,7 @@ export default function ExplorationsPage() {
       comments: 45,
       tags: ["NotebookLM", "Google", "知识管理", "RAG", "音频总览"],
       featured: true,
+      image: "/notebooklm.png",
       gradient: "from-emerald-500/20 to-teal-500/20"
     },
     {
@@ -43,6 +45,7 @@ export default function ExplorationsPage() {
       comments: 23,
       tags: ["GPT-4o", "机器人", "任务规划", "大语言模型"],
       featured: true,
+      image: "/gpt4-0.png",
       gradient: "from-blue-500/20 to-cyan-500/20"
     },
     {
@@ -57,6 +60,7 @@ export default function ExplorationsPage() {
       comments: 34,
       tags: ["产品设计", "具身智能", "用户体验", "设计原则"],
       featured: true,
+      image: "/具身智能.png",
       gradient: "from-green-500/20 to-emerald-500/20"
     },
     {
@@ -198,7 +202,17 @@ export default function ExplorationsPage() {
                     {featuredArticles.map((article, index) => (
                       <ScrollReveal key={article.id} delay={600 + index * 200}>
                         <Card className="overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer group shadow-xl">
-                          <div className={`h-48 bg-gradient-to-br ${article.gradient} relative overflow-hidden`}>
+                          <div className="h-48 relative overflow-hidden">
+                            {article.image ? (
+                              <Image
+                                src={article.image}
+                                alt={article.title}
+                                fill
+                                className="object-cover group-hover:scale-110 transition-transform duration-300"
+                              />
+                            ) : (
+                              <div className={`h-full bg-gradient-to-br ${article.gradient}`} />
+                            )}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                             <div className="absolute bottom-4 left-4">
                               <Badge className="bg-white/90 text-gray-900">{article.category}</Badge>
@@ -273,8 +287,18 @@ export default function ExplorationsPage() {
                         <Card className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 cursor-pointer group hover:shadow-lg">
                           <CardContent className="p-6">
                             <div className="flex flex-col md:flex-row gap-6">
-                              <div className={`md:w-32 h-32 bg-gradient-to-br ${article.gradient} rounded-lg flex-shrink-0 relative overflow-hidden`}>
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                              <div className="md:w-32 h-32 rounded-lg flex-shrink-0 relative overflow-hidden">
+                                {article.image ? (
+                                  <Image
+                                    src={article.image}
+                                    alt={article.title}
+                                    fill
+                                    className="object-cover rounded-lg"
+                                  />
+                                ) : (
+                                  <div className={`h-full bg-gradient-to-br ${article.gradient} rounded-lg`} />
+                                )}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg" />
                                 <div className="absolute bottom-2 left-2">
                                   <Badge variant="secondary" className="text-xs bg-slate-900/80 text-purple-300">{article.category}</Badge>
                                 </div>

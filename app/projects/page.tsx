@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       id: "intelligent-grasping-robot",
       title: "智能无损抓取机械臂",
       description: '"触觉感知-柔性控制-特征迁移"三位一体系统',
-      image: "/intelligent-grasping-robot.png",
+      image: "/智能无损抓取.jpg",
       tags: ["力控算法", "原型网络", "零样本推理", "树莓派", "ROS"],
       status: "核心项目",
       achievements: ["0.01N力控分辨率", "99.5%无损抓取率", "大学生创新大赛银奖"],
@@ -24,7 +24,7 @@ export default function ProjectsPage() {
       id: "wind-turbine-diagnosis",
       title: "风力发电机故障诊断",
       description: "基于深度学习的设备健康监测与寿命预测",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/风力发电机故障诊断.png",
       tags: ["自注意力机制", "LSTM", "SARIMA", "MLE", "大数据"],
       status: "技术项目",
       achievements: ["多模型融合", "高精度预测", "工业应用验证"],
@@ -46,7 +46,7 @@ export default function ProjectsPage() {
       id: "domain-adaptation",
       title: "多层域适应故障诊断",
       description: "基于MMD的跨域故障诊断算法",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/multilayer domain.png",
       tags: ["MMD", "域适应", "1D-CNN", "跨域泛化"],
       status: "研究项目",
       achievements: ["跨域泛化能力", "多内核MMD", "论文级精度"],
@@ -71,7 +71,7 @@ export default function ProjectsPage() {
       id: "robot-competition",
       title: "探索者杯机器人竞赛",
       description: "第六届探索者杯机器人竞赛校园行校赛二等奖",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/探索者.jpg",
       tags: ["Arduino", "传感器融合", "智能避障", "电路设计"],
       status: "技术竞赛",
       achievements: ["校赛二等奖", "智能避障算法", "多传感器融合"],
@@ -82,7 +82,7 @@ export default function ProjectsPage() {
       id: "business-competition",
       title: "工创大赛",
       description: "2025年工创大赛虚拟仿真企业运营大赛入围校赛决赛",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/工创大赛.jpg",
       tags: ["商业决策", "跨专业合作", "数据分析", "战略规划"],
       status: "商业竞赛",
       achievements: ["42队中入围决赛", "跨专业团队", "综合决策能力"],
@@ -96,7 +96,7 @@ export default function ProjectsPage() {
       id: "hr-intern",
       title: "CED Organic&Food",
       description: "人力资源部业务助理实习经历",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/CED.jpg",
       tags: ["货物管理", "跨部门合作", "多语言交流", "业务流程"],
       status: "实习经历",
       achievements: ["日处理千件货品", "多部门协作", "分销商对接"],
@@ -107,7 +107,7 @@ export default function ProjectsPage() {
       id: "sales-intern",
       title: "Bee Cheng Hiang 美珍香",
       description: "食品销售与原材料订购助理",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/beechenghiang.jpg",
       tags: ["食品采购", "销售技巧", "客户服务", "供应链管理"],
       status: "实习经历",
       achievements: ["原材料采购管理", "客户推销经验", "门店运营"],
@@ -118,7 +118,7 @@ export default function ProjectsPage() {
       id: "pm-intern",
       title: "上海恒数科技",
       description: "项目经理助理兼系统开发实习",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/eversure.png",
       tags: ["ERP系统", "项目管理", "跨境电商", "系统开发"],
       status: "实习经历",
       achievements: ["跨境电商方案调研", "ERP系统开发", "运营优化"],
@@ -275,13 +275,7 @@ export default function ProjectsPage() {
                               </ul>
                             </div>
                             
-                            <div className="flex gap-2 pt-2">
-                              <Button size="sm" variant="outline" className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400 transition-colors" asChild>
-                                <Link href={`/projects/${project.id}`}>
-                                  查看详情 <ExternalLink className="ml-1 h-3 w-3" />
-                                </Link>
-                              </Button>
-                            </div>
+
                           </div>
                         </CardContent>
                       </Card>
