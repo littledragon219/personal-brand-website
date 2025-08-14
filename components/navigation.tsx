@@ -13,6 +13,7 @@ export function Navigation() {
     { href: '/about', label: '关于我' },
     { href: '/projects', label: '项目集' },
     { href: '/explorations', label: '我的探索' },
+    { href: '/blog', label: '博客' },
     { href: '/contact', label: '联系我' },
   ]
 
