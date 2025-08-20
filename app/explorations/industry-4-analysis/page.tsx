@@ -254,8 +254,8 @@ export default function Industry4AnalysisPage() {
 
               {/* MES系统功能分类 */}
               <section id="functions" className="mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <Cog className="h-6 w-6 text-blue-600" />
+                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                  <Cog className="h-6 w-6 text-purple-400" />
                   MES系统功能分类
                 </h2>
                 
@@ -263,27 +263,27 @@ export default function Industry4AnalysisPage() {
                   <div className="overflow-x-auto">
                     <table className="w-full border-collapse">
                       <thead>
-                        <tr className="border-b border-gray-200">
-                          <th className="text-left py-3 px-4 font-semibold text-gray-900">模块</th>
-                          <th className="text-left py-3 px-4 font-semibold text-gray-900">功能描述</th>
+                        <tr className="border-b border-purple-500/30">
+                          <th className="text-left py-3 px-4 font-semibold text-white">模块</th>
+                          <th className="text-left py-3 px-4 font-semibold text-white">功能描述</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b border-gray-100">
-                          <td className="py-3 px-4 font-medium text-gray-800">生产执行与调度</td>
-                          <td className="py-3 px-4 text-gray-600">订单分解、资源分配、作业排程、瓶颈分析</td>
+                        <tr className="border-b border-purple-500/20">
+                          <td className="py-3 px-4 font-medium text-purple-200">生产执行与调度</td>
+                          <td className="py-3 px-4 text-gray-300">订单分解、资源分配、作业排程、瓶颈分析</td>
                         </tr>
-                        <tr className="border-b border-gray-100">
-                          <td className="py-3 px-4 font-medium text-gray-800">质量管理与追溯</td>
-                          <td className="py-3 px-4 text-gray-600">在线检验、异常报警、SPC分析、批次追溯</td>
+                        <tr className="border-b border-purple-500/20">
+                          <td className="py-3 px-4 font-medium text-purple-200">质量管理与追溯</td>
+                          <td className="py-3 px-4 text-gray-300">在线检验、异常报警、SPC分析、批次追溯</td>
                         </tr>
-                        <tr className="border-b border-gray-100">
-                          <td className="py-3 px-4 font-medium text-gray-800">物料与库存管理</td>
-                          <td className="py-3 px-4 text-gray-600">原料投料、在制品跟踪、成品入库管理</td>
+                        <tr className="border-b border-purple-500/20">
+                          <td className="py-3 px-4 font-medium text-purple-200">物料与库存管理</td>
+                          <td className="py-3 px-4 text-gray-300">原料投料、在制品跟踪、成品入库管理</td>
                         </tr>
                         <tr>
-                          <td className="py-3 px-4 font-medium text-gray-800">数据分析</td>
-                          <td className="py-3 px-4 text-gray-600">KPI监控、报表、绩效分析、移动看板</td>
+                          <td className="py-3 px-4 font-medium text-purple-200">数据分析</td>
+                          <td className="py-3 px-4 text-gray-300">KPI监控、报表、绩效分析、移动看板</td>
                         </tr>
                       </tbody>
                     </table>
@@ -293,47 +293,47 @@ export default function Industry4AnalysisPage() {
 
               {/* MES关键技术 */}
               <section id="technologies" className="mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <Cpu className="h-6 w-6 text-blue-600" />
+                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                  <Cpu className="h-6 w-6 text-purple-400" />
                   MES关键技术
                 </h2>
                 
                 <div className="space-y-6">
-                  <Card className="p-6 border-l-4 border-blue-500">
-                    <h3 className="text-xl font-semibold text-blue-800 mb-4">分层架构与标准化</h3>
-                    <p className="text-gray-700 leading-relaxed mb-3">
+                  <Card className="p-6 border-l-4 border-blue-500 bg-slate-700/30">
+                    <h3 className="text-xl font-semibold text-blue-300 mb-4">分层架构与标准化</h3>
+                    <p className="text-gray-300 leading-relaxed mb-3">
                       基于ISA-95标准，低代码平台（Mendix）支持定制化开发，
                       实现快速部署和灵活配置。
                     </p>
                   </Card>
 
-                  <Card className="p-6 border-l-4 border-green-500">
-                    <h3 className="text-xl font-semibold text-green-800 mb-4">工业物联网(IIoT)</h3>
-                    <p className="text-gray-700 leading-relaxed mb-3">
+                  <Card className="p-6 border-l-4 border-green-500 bg-slate-700/30">
+                    <h3 className="text-xl font-semibold text-green-300 mb-4">工业物联网(IIoT)</h3>
+                    <p className="text-gray-300 leading-relaxed mb-3">
                       采用OPC UA、MQTT协议，支持与PLC/传感器实时通信，
                       实现设备数据的无缝集成和实时监控。
                     </p>
                   </Card>
 
-                  <Card className="p-6 border-l-4 border-purple-500">
-                    <h3 className="text-xl font-semibold text-purple-800 mb-4">机器学习与高级分析</h3>
-                    <p className="text-gray-700 leading-relaxed mb-3">
+                  <Card className="p-6 border-l-4 border-purple-500 bg-slate-700/30">
+                    <h3 className="text-xl font-semibold text-purple-300 mb-4">机器学习与高级分析</h3>
+                    <p className="text-gray-300 leading-relaxed mb-3">
                       集成预测性维护、质量预测、产能优化算法，
                       通过AI技术提升生产效率和设备可靠性。
                     </p>
                   </Card>
 
-                  <Card className="p-6 border-l-4 border-orange-500">
-                    <h3 className="text-xl font-semibold text-orange-800 mb-4">数字孪生技术</h3>
-                    <p className="text-gray-700 leading-relaxed mb-3">
+                  <Card className="p-6 border-l-4 border-orange-500 bg-slate-700/30">
+                    <h3 className="text-xl font-semibold text-orange-300 mb-4">数字孪生技术</h3>
+                    <p className="text-gray-300 leading-relaxed mb-3">
                       结合仿真与实时数据，实现预测调度和虚拟验证，
                       优化生产流程和资源配置。
                     </p>
                   </Card>
 
-                  <Card className="p-6 border-l-4 border-red-500">
-                    <h3 className="text-xl font-semibold text-red-800 mb-4">云计算协同</h3>
-                    <p className="text-gray-700 leading-relaxed mb-3">
+                  <Card className="p-6 border-l-4 border-red-500 bg-slate-700/30">
+                    <h3 className="text-xl font-semibold text-red-300 mb-4">云计算协同</h3>
+                    <p className="text-gray-300 leading-relaxed mb-3">
                       支持AWS、Azure部署，实现跨地域数据集中化管理，
                       提供弹性扩展和高可用性保障。
                     </p>
@@ -343,57 +343,57 @@ export default function Industry4AnalysisPage() {
 
               {/* 运行案例 */}
               <section id="cases" className="mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <Target className="h-6 w-6 text-blue-600" />
+                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                  <Target className="h-6 w-6 text-purple-400" />
                   运行案例
                 </h2>
                 
                 <div className="space-y-6">
-                  <Card className="p-6 border-l-4 border-blue-500">
-                    <h3 className="text-xl font-semibold text-blue-800 mb-4">The Absolut Company（食品饮料）</h3>
+                  <Card className="p-6 border-l-4 border-blue-500 bg-slate-700/30">
+                    <h3 className="text-xl font-semibold text-blue-300 mb-4">The Absolut Company（食品饮料）</h3>
                     <div className="mb-3">
-                      <span className="text-sm font-medium text-gray-600">应用：</span>
-                      <span className="text-gray-700">Opcenter APS + Execution</span>
+                      <span className="text-sm font-medium text-gray-400">应用：</span>
+                      <span className="text-gray-300">Opcenter APS + Execution</span>
                     </div>
                     <div>
-                      <span className="text-sm font-medium text-gray-600">成果：</span>
-                      <span className="text-gray-700">订单处理效率提升、自动化率接近100%、查询时间从4小时缩短至分钟级</span>
+                      <span className="text-sm font-medium text-gray-400">成果：</span>
+                      <span className="text-gray-300">订单处理效率提升、自动化率接近100%、查询时间从4小时缩短至分钟级</span>
                     </div>
                   </Card>
 
-                  <Card className="p-6 border-l-4 border-green-500">
-                    <h3 className="text-xl font-semibold text-green-800 mb-4">BASF Coatings（汽车涂料）</h3>
+                  <Card className="p-6 border-l-4 border-green-500 bg-slate-700/30">
+                    <h3 className="text-xl font-semibold text-green-300 mb-4">BASF Coatings（汽车涂料）</h3>
                     <div className="mb-3">
-                      <span className="text-sm font-medium text-gray-600">应用：</span>
-                      <span className="text-gray-700">Opcenter MES + SIMATIC PCS7</span>
+                      <span className="text-sm font-medium text-gray-400">应用：</span>
+                      <span className="text-gray-300">Opcenter MES + SIMATIC PCS7</span>
                     </div>
                     <div>
-                      <span className="text-sm font-medium text-gray-600">成果：</span>
-                      <span className="text-gray-700">实现无纸化生产、30cm高精度定位、工艺透明度提升</span>
+                      <span className="text-sm font-medium text-gray-400">成果：</span>
+                      <span className="text-gray-300">实现无纸化生产、30cm高精度定位、工艺透明度提升</span>
                     </div>
                   </Card>
 
-                  <Card className="p-6 border-l-4 border-purple-500">
-                    <h3 className="text-xl font-semibold text-purple-800 mb-4">Danfoss（工业机械）</h3>
+                  <Card className="p-6 border-l-4 border-purple-500 bg-slate-700/30">
+                    <h3 className="text-xl font-semibold text-purple-300 mb-4">Danfoss（工业机械）</h3>
                     <div className="mb-3">
-                      <span className="text-sm font-medium text-gray-600">应用：</span>
-                      <span className="text-gray-700">Opcenter Execution Foundation</span>
+                      <span className="text-sm font-medium text-gray-400">应用：</span>
+                      <span className="text-gray-300">Opcenter Execution Foundation</span>
                     </div>
                     <div>
-                      <span className="text-sm font-medium text-gray-600">成果：</span>
-                      <span className="text-gray-700">多工厂统一管控、混线生产、快速切换，缩短新产品导入时间</span>
+                      <span className="text-sm font-medium text-gray-400">成果：</span>
+                      <span className="text-gray-300">多工厂统一管控、混线生产、快速切换，缩短新产品导入时间</span>
                     </div>
                   </Card>
 
-                  <Card className="p-6 border-l-4 border-orange-500">
-                    <h3 className="text-xl font-semibold text-orange-800 mb-4">Egicon（电子制造）</h3>
+                  <Card className="p-6 border-l-4 border-orange-500 bg-slate-700/30">
+                    <h3 className="text-xl font-semibold text-orange-300 mb-4">Egicon（电子制造）</h3>
                     <div className="mb-3">
-                      <span className="text-sm font-medium text-gray-600">应用：</span>
-                      <span className="text-gray-700">Opcenter Execution Electronics IoT + Valor</span>
+                      <span className="text-sm font-medium text-gray-400">应用：</span>
+                      <span className="text-gray-300">Opcenter Execution Electronics IoT + Valor</span>
                     </div>
                     <div>
-                      <span className="text-sm font-medium text-gray-600">成果：</span>
-                      <span className="text-gray-700">返修率降低80%，实现无纸化车间与实时OEE看板</span>
+                      <span className="text-sm font-medium text-gray-400">成果：</span>
+                      <span className="text-gray-300">返修率降低80%，实现无纸化车间与实时OEE看板</span>
                     </div>
                   </Card>
                 </div>
@@ -401,13 +401,13 @@ export default function Industry4AnalysisPage() {
 
               {/* 主要挑战 */}
               <section id="challenges" className="mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <AlertTriangle className="h-6 w-6 text-red-600" />
+                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                  <AlertTriangle className="h-6 w-6 text-red-400" />
                   主要挑战
                 </h2>
                 
                 <div className="bg-red-900/20 p-6 rounded-lg border border-red-500/30">
-                  <ul className="space-y-3 text-gray-700">
+                  <ul className="space-y-3 text-gray-300">
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                       <span><strong>高成本投入：</strong>硬件采购、人员培训、系统搭建</span>
@@ -434,48 +434,48 @@ export default function Industry4AnalysisPage() {
 
               {/* 未来发展趋势 */}
               <section id="trends" className="mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <TrendingUp className="h-6 w-6 text-green-600" />
+                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                  <TrendingUp className="h-6 w-6 text-green-400" />
                   未来发展趋势
                 </h2>
                 
                 <div className="grid md:grid-cols-2 gap-6">
-                  <Card className="p-6 bg-gradient-to-br from-blue-50 to-purple-50 border-blue-200">
-                    <h4 className="font-semibold text-blue-800 mb-3 flex items-center gap-2">
+                  <Card className="p-6 bg-slate-700/30 border-blue-500/30">
+                    <h4 className="font-semibold text-blue-300 mb-3 flex items-center gap-2">
                       <Zap className="h-5 w-5" />
                       容器化与微服务化
                     </h4>
-                    <p className="text-blue-700 text-sm">
+                    <p className="text-gray-300 text-sm">
                       SaaS模式降低管理成本，提供更灵活的部署选项
                     </p>
                   </Card>
 
-                  <Card className="p-6 bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
-                    <h4 className="font-semibold text-green-800 mb-3 flex items-center gap-2">
+                  <Card className="p-6 bg-slate-700/30 border-green-500/30">
+                    <h4 className="font-semibold text-green-300 mb-3 flex items-center gap-2">
                       <Cpu className="h-5 w-5" />
                       低代码平台普及
                     </h4>
-                    <p className="text-green-700 text-sm">
+                    <p className="text-gray-300 text-sm">
                       Mendix等工具缩短开发周期，降低定制化门槛
                     </p>
                   </Card>
 
-                  <Card className="p-6 bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200">
-                    <h4 className="font-semibold text-purple-800 mb-3 flex items-center gap-2">
+                  <Card className="p-6 bg-slate-700/30 border-purple-500/30">
+                    <h4 className="font-semibold text-purple-300 mb-3 flex items-center gap-2">
                       <Network className="h-5 w-5" />
                       数字孪生与AI
                     </h4>
-                    <p className="text-purple-700 text-sm">
+                    <p className="text-gray-300 text-sm">
                       实现预测性维护与智能调度，提升决策精度
                     </p>
                   </Card>
 
-                  <Card className="p-6 bg-gradient-to-br from-orange-50 to-red-50 border-orange-200">
-                    <h4 className="font-semibold text-orange-800 mb-3 flex items-center gap-2">
+                  <Card className="p-6 bg-slate-700/30 border-orange-500/30">
+                    <h4 className="font-semibold text-orange-300 mb-3 flex items-center gap-2">
                       <Shield className="h-5 w-5" />
                       开放生态平台
                     </h4>
-                    <p className="text-orange-700 text-sm">
+                    <p className="text-gray-300 text-sm">
                       第三方应用可集成，形成"平台+生态"闭环
                     </p>
                   </Card>
@@ -484,15 +484,15 @@ export default function Industry4AnalysisPage() {
 
               {/* 分析与结论 */}
               <section id="conclusion" className="mb-12">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <CheckCircle className="h-6 w-6 text-green-600" />
+                <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-green-400" />
                   分析与结论
                 </h2>
                 
                 <div className="space-y-6">
-                  <Card className="p-6 bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
-                    <h3 className="font-semibold text-green-800 mb-3">优势</h3>
-                    <ul className="space-y-2 text-green-700 text-sm">
+                  <Card className="p-6 bg-slate-700/30 border-green-500/30">
+                    <h3 className="font-semibold text-green-300 mb-3">优势</h3>
+                    <ul className="space-y-2 text-gray-300 text-sm">
                       <li>• 实现生产可视化与闭环控制</li>
                       <li>• ERP到设备的端到端集成</li>
                       <li>• 高效生产排程与质量追溯</li>
@@ -500,18 +500,18 @@ export default function Industry4AnalysisPage() {
                     </ul>
                   </Card>
 
-                  <Card className="p-6 bg-gradient-to-br from-orange-50 to-red-50 border-orange-200">
-                    <h3 className="font-semibold text-orange-800 mb-3">挑战</h3>
-                    <ul className="space-y-2 text-orange-700 text-sm">
+                  <Card className="p-6 bg-slate-700/30 border-orange-500/30">
+                    <h3 className="font-semibold text-orange-300 mb-3">挑战</h3>
+                    <ul className="space-y-2 text-gray-300 text-sm">
                       <li>• 高投入与维护成本</li>
                       <li>• 行业定制难度大</li>
                       <li>• 适用于高附加值与高可靠性行业</li>
                     </ul>
                   </Card>
 
-                  <Card className="p-6 bg-gradient-to-br from-blue-50 to-purple-50 border-blue-200">
-                    <h3 className="font-semibold text-blue-800 mb-3">趋势</h3>
-                    <p className="text-blue-700 text-sm">
+                  <Card className="p-6 bg-slate-700/30 border-blue-500/30">
+                    <h3 className="font-semibold text-blue-300 mb-3">趋势</h3>
+                    <p className="text-gray-300 text-sm">
                       借助AI、云计算、低代码平台，Opcenter将朝着更智能、模块化、开放方向发展。
                     </p>
                   </Card>
@@ -525,13 +525,13 @@ export default function Industry4AnalysisPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 mb-8"
+            className="bg-yellow-900/20 rounded-2xl p-8 mb-8 border border-yellow-500/30"
           >
-            <h3 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
-              <Lightbulb className="h-5 w-5 text-yellow-500" />
+            <h3 className="font-semibold text-white mb-3 flex items-center gap-2">
+              <Lightbulb className="h-5 w-5 text-yellow-400" />
               个人思考与洞察
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed">
               作为AI产品经理，我认为Siemens Opcenter代表了MES系统的发展方向。
               其成功在于平衡了标准化与定制化的需求，通过低代码平台降低了实施门槛。
               未来的制造执行系统将更加智能化、平台化，关键是要在技术先进性和商业可行性之间找到最佳平衡点。
@@ -546,10 +546,10 @@ export default function Industry4AnalysisPage() {
             className="bg-slate-800/50 rounded-2xl shadow-lg p-8"
           >
             <div className="mb-8">
-              <h3 className="font-semibold text-gray-900 mb-3">相关标签</h3>
+              <h3 className="font-semibold text-white mb-3">相关标签</h3>
               <div className="flex flex-wrap gap-2">
                 {["MES系统", "Siemens Opcenter", "工业4.0", "制造执行系统", "数字化转型", "智能制造"].map((tag) => (
-                  <Badge key={tag} variant="secondary" className="hover:bg-gray-200 transition-colors">
+                  <Badge key={tag} variant="secondary" className="bg-purple-900/30 text-purple-200 hover:bg-purple-800/40 transition-colors border-purple-500/30">
                     {tag}
                   </Badge>
                 ))}
@@ -557,18 +557,18 @@ export default function Industry4AnalysisPage() {
             </div>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">相关文章推荐</h2>
+              <h2 className="text-2xl font-bold text-white mb-8">相关文章推荐</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer bg-slate-700/30 border-slate-600/50">
                   <CardContent className="p-6">
-                    <Badge variant="secondary" className="mb-3">产品思考</Badge>
-                    <h3 className="font-semibold text-lg mb-2 hover:text-blue-600">
+                    <Badge variant="secondary" className="mb-3 bg-purple-900/30 text-purple-200 border-purple-500/30">产品思考</Badge>
+                    <h3 className="font-semibold text-lg mb-2 hover:text-purple-300 text-white">
                       具身智能产品设计的三个原则
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4">
+                    <p className="text-gray-400 text-sm mb-4">
                       基于项目经验总结的产品设计核心原则...
                     </p>
-                    <Button variant="ghost" size="sm" asChild>
+                    <Button variant="ghost" size="sm" asChild className="text-purple-300 hover:text-purple-200 hover:bg-purple-900/20">
                       <Link href="/explorations/embodied-ai-design-principles">
                         阅读更多 <ArrowRight className="ml-1 h-3 w-3" />
                       </Link>
@@ -576,16 +576,16 @@ export default function Industry4AnalysisPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <Card className="hover:shadow-lg transition-shadow cursor-pointer bg-slate-700/30 border-slate-600/50">
                   <CardContent className="p-6">
-                    <Badge variant="secondary" className="mb-3">行业分析</Badge>
-                    <h3 className="font-semibold text-lg mb-2 hover:text-blue-600">
+                    <Badge variant="secondary" className="mb-3 bg-purple-900/30 text-purple-200 border-purple-500/30">行业分析</Badge>
+                    <h3 className="font-semibold text-lg mb-2 hover:text-purple-300 text-white">
                       拆解特斯拉Optimus的产品迭代路径
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4">
+                    <p className="text-gray-400 text-sm mb-4">
                       从产品经理角度分析特斯拉机器人策略...
                     </p>
-                    <Button variant="ghost" size="sm" asChild>
+                    <Button variant="ghost" size="sm" asChild className="text-purple-300 hover:text-purple-200 hover:bg-purple-900/20">
                       <Link href="/explorations/tesla-optimus-analysis">
                         阅读更多 <ArrowRight className="ml-1 h-3 w-3" />
                       </Link>
