@@ -103,7 +103,7 @@ export default function GPT4oRobotPlanningPage() {
               <li className="mb-2"><strong>场景三：</strong>协作任务执行 - 多机器人协同完成复杂任务</li>
             </ul>
 
-            <Card className="my-8 bg-blue-50 border-blue-200">
+            <Card className="my-8 bg-slate-700/30 border-purple-500/30">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-blue-900 mb-3">💡 关键发现</h3>
                 <p className="text-blue-800">
@@ -122,13 +122,13 @@ export default function GPT4oRobotPlanningPage() {
               并生成相应的执行步骤。
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
+            <div className="bg-slate-700/30 p-6 rounded-lg mb-6">
               <h4 className="font-semibold mb-3">示例对话：</h4>
               <div className="space-y-3">
-                <div className="bg-white p-3 rounded border-l-4 border-blue-500">
+                <div className="bg-slate-700/50 p-3 rounded border-l-4 border-purple-500">
                   <strong>用户：</strong>桌面上有红色玻璃杯、蓝色塑料瓶、绿色苹果，请规划抓取顺序
                 </div>
-                <div className="bg-blue-50 p-3 rounded border-l-4 border-green-500">
+                <div className="bg-slate-700/50 p-3 rounded border-l-4 border-green-500">
                   <strong>GPT-4o：</strong>建议抓取顺序：1) 绿色苹果（易损但相对安全）2) 红色玻璃杯（最易碎，需要特别小心）3) 蓝色塑料瓶（最稳定）。
                   每次抓取前都要调整力控参数...
                 </div>
@@ -145,7 +145,7 @@ export default function GPT4oRobotPlanningPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">优势与局限性</h2>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Card className="border-green-200 bg-green-50">
+              <Card className="border-green-500/30 bg-green-900/20">
                 <CardHeader>
                   <CardTitle className="text-green-800 flex items-center gap-2">
                     <ThumbsUp className="h-5 w-5" />

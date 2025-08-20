@@ -10,7 +10,7 @@ import { BackgroundEffects } from "@/components/background-effects"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative bg-[#1A1A2E]">
       <BackgroundEffects />
       
       <div className="relative z-10 py-16">
@@ -19,12 +19,12 @@ export default function ContactPage() {
             {/* Header */}
             <ScrollReveal>
               <div className="text-center mb-16">
-                <div className="inline-block p-1 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 mb-6">
-                  <div className="bg-slate-900 rounded-full px-6 py-2">
-                    <span className="text-purple-400 text-sm font-medium">让我们开始对话</span>
+                <div className="inline-block p-1 rounded-full bg-[#00FFC2]/20 mb-6">
+                  <div className="bg-black/60 rounded-full px-6 py-2">
+                    <span className="text-[#00FFC2] text-sm font-medium">让我们开始对话</span>
                   </div>
                 </div>
-                <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent mb-6">
+                <h1 className="text-4xl font-bold text-white mb-6">
                   联系我
                 </h1>
                 <p className="text-xl text-gray-300">
@@ -36,10 +36,10 @@ export default function ContactPage() {
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Form */}
               <ScrollReveal delay={200}>
-                <Card className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/30 hover:border-purple-400/50 transition-all duration-300">
+                <Card className="bg-black/60 backdrop-blur-sm border border-[#00FFC2]/30 hover:border-[#00FFC2]/50 transition-all duration-300">
                   <CardHeader>
                     <CardTitle className="text-white">发送消息</CardTitle>
-                    <CardDescription className="text-gray-400">
+                    <CardDescription className="text-gray-300">
                       填写下面的表单，我会尽快回复你
                     </CardDescription>
                   </CardHeader>
@@ -51,7 +51,7 @@ export default function ContactPage() {
                           <Input 
                             id="name" 
                             placeholder="你的姓名" 
-                            className="bg-slate-900/50 border-purple-500/30 text-white placeholder:text-gray-500 focus:border-purple-400"
+                            className="bg-black/60 border-[#00FFC2]/30 text-white placeholder:text-gray-500 focus:border-[#00FFC2]"
                           />
                         </div>
                         <div className="space-y-2">
@@ -60,7 +60,7 @@ export default function ContactPage() {
                             id="email" 
                             type="email" 
                             placeholder="your@email.com" 
-                            className="bg-slate-900/50 border-purple-500/30 text-white placeholder:text-gray-500 focus:border-purple-400"
+                            className="bg-black/60 border-[#00FFC2]/30 text-white placeholder:text-gray-500 focus:border-[#00FFC2]"
                           />
                         </div>
                       </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
                         <Input 
                           id="company" 
                           placeholder="你的公司或组织" 
-                          className="bg-slate-900/50 border-purple-500/30 text-white placeholder:text-gray-500 focus:border-purple-400"
+                          className="bg-black/60 border-[#00FFC2]/30 text-white placeholder:text-gray-500 focus:border-[#00FFC2]"
                         />
                       </div>
                       
@@ -79,7 +79,7 @@ export default function ContactPage() {
                         <Input 
                           id="subject" 
                           placeholder="想聊什么？" 
-                          className="bg-slate-900/50 border-purple-500/30 text-white placeholder:text-gray-500 focus:border-purple-400"
+                          className="bg-black/60 border-[#00FFC2]/30 text-white placeholder:text-gray-500 focus:border-[#00FFC2]"
                         />
                       </div>
                       
@@ -89,11 +89,11 @@ export default function ContactPage() {
                           id="message" 
                           placeholder="详细描述你的想法或问题..."
                           rows={6}
-                          className="bg-slate-900/50 border-purple-500/30 text-white placeholder:text-gray-500 focus:border-purple-400"
+                          className="bg-black/60 border-[#00FFC2]/30 text-white placeholder:text-gray-500 focus:border-[#00FFC2]"
                         />
                       </div>
                       
-                      <Button type="submit" className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white transform hover:scale-105 transition-all duration-200">
+                      <Button type="submit" className="w-full bg-[#00FFC2] text-black hover:bg-[#00FFC2]/80 transform hover:scale-105 transition-all duration-200">
                         发送消息
                       </Button>
                     </form>
@@ -104,26 +104,26 @@ export default function ContactPage() {
               {/* Contact Info */}
               <div className="space-y-8">
                 <ScrollReveal delay={400}>
-                  <Card className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/30 hover:border-purple-400/50 transition-all duration-300">
+                  <Card className="bg-black/60 backdrop-blur-sm border border-[#00FFC2]/30 hover:border-[#00FFC2]/50 transition-all duration-300">
                     <CardHeader>
                       <CardTitle className="text-white">联系方式</CardTitle>
-                      <CardDescription className="text-gray-400">
+                      <CardDescription className="text-gray-300">
                         多种方式与我取得联系
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
                       {[
-                        { icon: Mail, title: "邮箱", content: ".", colorClasses: "from-blue-500/20 to-cyan-500/20" },
-                        { icon: MessageCircle, title: "微信", content: ".", colorClasses: "from-green-500/20 to-emerald-500/20" },
-                        { icon: MapPin, title: "位置", content: "中国", colorClasses: "from-purple-500/20 to-pink-500/20" }
+                        { icon: Mail, title: "邮箱", content: ".", colorClasses: "from-[#00FFC2]/20 to-cyan-500/20" },
+                        { icon: MessageCircle, title: "微信", content: ".", colorClasses: "from-[#00FFC2]/20 to-emerald-500/20" },
+                        { icon: MapPin, title: "位置", content: "中国", colorClasses: "from-[#00FFC2]/20 to-teal-500/20" }
                       ].map((item, index) => (
                         <div key={index} className="flex items-center gap-4 group cursor-pointer">
                           <div className={`w-12 h-12 bg-gradient-to-br ${item.colorClasses} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                             <item.icon className="h-5 w-5 text-white" />
                           </div>
                           <div>
-                            <h3 className="font-semibold text-white group-hover:text-purple-300 transition-colors">{item.title}</h3>
-                            <p className="text-gray-400">{item.content}</p>
+                            <h3 className="font-semibold text-white group-hover:text-[#00FFC2] transition-colors">{item.title}</h3>
+                            <p className="text-gray-300">{item.content}</p>
                           </div>
                         </div>
                       ))}
@@ -132,22 +132,22 @@ export default function ContactPage() {
                 </ScrollReveal>
 
                 <ScrollReveal delay={600}>
-                  <Card className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/30 hover:border-purple-400/50 transition-all duration-300">
+                  <Card className="bg-black/60 backdrop-blur-sm border border-[#00FFC2]/30 hover:border-[#00FFC2]/50 transition-all duration-300">
                     <CardHeader>
                       <CardTitle className="text-white">社交媒体</CardTitle>
-                      <CardDescription className="text-gray-400">
+                      <CardDescription className="text-gray-300">
                         在这些平台上关注我的最新动态
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="flex gap-4">
-                        <Button variant="outline" size="sm" className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400 transition-colors" asChild>
+                        <Button variant="outline" size="sm" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 hover:border-[#00FFC2] transition-colors" asChild>
                           <Link href="https://linkedin.com" target="_blank">
                             <Linkedin className="mr-2 h-4 w-4" />
                             LinkedIn
                           </Link>
                         </Button>
-                        <Button variant="outline" size="sm" className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400 transition-colors" asChild>
+                        <Button variant="outline" size="sm" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 hover:border-[#00FFC2] transition-colors" asChild>
                           <Link href="https://github.com" target="_blank">
                             <Github className="mr-2 h-4 w-4" />
                             GitHub
@@ -159,7 +159,7 @@ export default function ContactPage() {
                 </ScrollReveal>
 
                 <ScrollReveal delay={800}>
-                  <Card className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 backdrop-blur-sm">
+                  <Card className="bg-gradient-to-br from-[#00FFC2]/10 to-teal-500/10 border border-[#00FFC2]/30 backdrop-blur-sm">
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-white mb-3">
                         💡 特别欢迎讨论
@@ -176,7 +176,7 @@ export default function ContactPage() {
                 </ScrollReveal>
 
                 <ScrollReveal delay={1000}>
-                  <Card className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/30">
+                  <Card className="bg-black/60 backdrop-blur-sm border border-[#00FFC2]/30">
                     <CardHeader>
                       <CardTitle className="text-white">响应时间</CardTitle>
                     </CardHeader>
@@ -187,9 +187,9 @@ export default function ContactPage() {
                           { type: "微信回复", time: "2-4小时内" },
                           { type: "电话/视频", time: "预约安排" }
                         ].map((item, index) => (
-                          <div key={index} className="flex justify-between items-center p-3 bg-slate-900/30 rounded-lg">
-                            <span className="text-gray-400">{item.type}</span>
-                            <span className="font-semibold text-purple-300">{item.time}</span>
+                          <div key={index} className="flex justify-between items-center p-3 bg-black/30 rounded-lg">
+                            <span className="text-gray-300">{item.type}</span>
+                            <span className="font-semibold text-[#00FFC2]">{item.time}</span>
                           </div>
                         ))}
                       </div>
@@ -233,9 +233,9 @@ export default function ContactPage() {
                       colorClasses: "from-orange-500/20 to-red-500/20"
                     }
                   ].map((item, index) => (
-                    <Card key={index} className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group">
+                    <Card key={index} className="bg-black/60 backdrop-blur-sm border border-[#00FFC2]/20 hover:border-[#00FFC2]/40 transition-all duration-300 group">
                       <CardHeader>
-                        <CardTitle className="text-lg text-white group-hover:text-purple-300 transition-colors flex items-center gap-3">
+                        <CardTitle className="text-lg text-white group-hover:text-[#00FFC2] transition-colors flex items-center gap-3">
                           <div className={`w-12 h-12 bg-gradient-to-br ${item.colorClasses} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                             <span className="text-xl">{item.icon}</span>
                           </div>

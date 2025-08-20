@@ -64,6 +64,36 @@ export default function ExplorationsPage() {
       gradient: "from-green-500/20 to-emerald-500/20"
     },
     {
+      id: "industry-4-analysis",
+      title: "面向工业4.0的西门子Opcenter系统分析报告",
+      excerpt: "深度分析Siemens Opcenter MES系统架构、功能模块与实际运行案例，验证其在生产绩效提升上的价值。从系统集成到数据分析，全面解析这一制造执行系统的核心能力...",
+      category: "行业分析",
+      date: "2024.01.25",
+      readTime: "12分钟",
+      views: 1856,
+      likes: 156,
+      comments: 23,
+      tags: ["MES系统", "Siemens Opcenter", "工业4.0", "制造执行系统"],
+      featured: true,
+      image: "/opcenter.jpg",
+      gradient: "from-indigo-500/20 to-blue-500/20"
+    },
+    {
+      id: "gqtea-analysis",
+      title: "光启茶韵(GQTea)企业分析报告",
+      excerpt: "深度分析光启茶韵的商业模式、核心竞争力与发展战略。从供应链垂直整合到下沉市场布局，全面解析这家现制饮品行业领军企业的成功密码与未来展望...",
+      category: "行业分析",
+      date: "2024.01.30",
+      readTime: "18分钟",
+      views: 2134,
+      likes: 189,
+      comments: 34,
+      tags: ["现制饮品", "连锁经营", "供应链管理", "商业模式", "下沉市场"],
+      featured: true,
+      image: "/GQTEA.png",
+      gradient: "from-green-500/20 to-emerald-500/20"
+    },
+    {
       id: "tesla-optimus-analysis",
       title: "拆解特斯拉Optimus的产品迭代路径",
       excerpt: "从产品经理的角度分析特斯拉人形机器人的设计理念、技术选型和商业化策略。马斯克的产品思维如何在机器人领域得到体现？",
@@ -155,228 +185,83 @@ export default function ExplorationsPage() {
               </div>
             </ScrollReveal>
 
-            {/* Search and Filter */}
-            <ScrollReveal delay={200}>
-              <div className="mb-12">
-                <div className="flex flex-col md:flex-row gap-4 mb-6">
-                  <div className="relative flex-1">
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-                    <Input
-                      placeholder="搜索文章..."
-                      value={searchTerm}
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                      className="pl-10 bg-slate-800/50 border-purple-500/30 text-white placeholder:text-gray-500 focus:border-purple-400"
-                    />
-                  </div>
-                </div>
-                
-                <div className="flex flex-wrap gap-2">
-                  {categories.map((category) => (
-                    <Button
-                      key={category}
-                      variant={selectedCategory === category ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setSelectedCategory(category)}
-                      className={selectedCategory === category 
-                        ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white" 
-                        : "border-purple-400/50 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400"
-                      }
-                    >
-                      {category}
-                    </Button>
+
+
+
+
+            {/* Featured Articles */}
+            <ScrollReveal delay={600}>
+              <div className="mb-16">
+                <h2 className="text-2xl font-bold text-white mb-8">精选文章</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {articles.map((article, index) => (
+                    <Link key={article.id} href={`/explorations/${article.id}`}>
+                      <Card className="bg-slate-800/50 border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 group h-full">
+                        <CardHeader className="p-0">
+                          <div className="relative overflow-hidden rounded-t-lg">
+                            {article.image && (
+                              <Image
+                                src={article.image}
+                                alt={article.title}
+                                width={400}
+                                height={240}
+                                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                              />
+                            )}
+                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+                            <div className="absolute bottom-4 left-4">
+                              <Badge className="bg-purple-500/20 text-purple-300 border-purple-400/50">
+                                {article.category}
+                              </Badge>
+                            </div>
+                          </div>
+                        </CardHeader>
+                        <CardContent className="p-6">
+                          <CardTitle className="text-white mb-3 group-hover:text-purple-300 transition-colors line-clamp-2">
+                            {article.title}
+                          </CardTitle>
+                          <CardDescription className="text-gray-400 mb-4 line-clamp-3">
+                            {article.excerpt}
+                          </CardDescription>
+                          <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                            <div className="flex items-center gap-4">
+                              <span className="flex items-center gap-1">
+                                <Calendar className="h-3 w-3" />
+                                {article.date}
+                              </span>
+                              <span>{article.readTime}</span>
+                            </div>
+                          </div>
+                          <div className="flex items-center justify-between text-sm text-gray-500">
+                            <div className="flex items-center gap-4">
+                              <span className="flex items-center gap-1">
+                                <Eye className="h-3 w-3" />
+                                {article.views}
+                              </span>
+                              <span className="flex items-center gap-1">
+                                <Heart className="h-3 w-3" />
+                                {article.likes}
+                              </span>
+                              <span className="flex items-center gap-1">
+                                <MessageCircle className="h-3 w-3" />
+                                {article.comments}
+                              </span>
+                            </div>
+                          </div>
+                          <div className="flex flex-wrap gap-1 mt-3">
+                            {article.tags.slice(0, 3).map((tag) => (
+                              <Badge key={tag} variant="outline" className="text-xs border-purple-400/30 text-purple-300">
+                                {tag}
+                              </Badge>
+                            ))}
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </Link>
                   ))}
                 </div>
               </div>
             </ScrollReveal>
-
-            {/* Featured Articles */}
-            {featuredArticles.length > 0 && (
-              <ScrollReveal delay={400}>
-                <section className="mb-16">
-                  <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
-                    <span className="w-1 h-6 bg-gradient-to-b from-purple-500 to-pink-500 rounded"></span>
-                    精选文章
-                  </h2>
-                  
-                  <div className="grid md:grid-cols-2 gap-8">
-                    {featuredArticles.map((article, index) => (
-                      <ScrollReveal key={article.id} delay={600 + index * 200}>
-                        <Card className="overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer group shadow-xl">
-                          <div className="h-48 relative overflow-hidden">
-                            {article.image ? (
-                              <Image
-                                src={article.image}
-                                alt={article.title}
-                                fill
-                                className="object-cover group-hover:scale-110 transition-transform duration-300"
-                              />
-                            ) : (
-                              <div className={`h-full bg-gradient-to-br ${article.gradient}`} />
-                            )}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                            <div className="absolute bottom-4 left-4">
-                              <Badge className="bg-white/90 text-gray-900">{article.category}</Badge>
-                            </div>
-                          </div>
-                          
-                          <CardContent className="p-6">
-                            <CardHeader className="p-0 mb-4">
-                              <div className="flex items-center gap-4 text-sm text-gray-400 mb-2">
-                                <span className="flex items-center gap-1">
-                                  <Calendar className="h-3 w-3" />
-                                  {article.date}
-                                </span>
-                                <span>{article.readTime}</span>
-                              </div>
-                              <CardTitle className="text-xl group-hover:text-purple-300 transition-colors text-white">
-                                {article.title}
-                              </CardTitle>
-                            </CardHeader>
-                            
-                            <CardDescription className="text-gray-400 mb-4 line-clamp-3">
-                              {article.excerpt}
-                            </CardDescription>
-                            
-                            <div className="flex items-center justify-between">
-                              <div className="flex flex-wrap gap-1">
-                                {article.tags.slice(0, 3).map((tag) => (
-                                  <Badge key={tag} variant="outline" className="text-xs border-purple-400/50 text-purple-300 hover:bg-purple-500/20 transition-colors">
-                                    {tag}
-                                  </Badge>
-                                ))}
-                              </div>
-                              
-                              <div className="flex items-center gap-4 text-sm text-gray-500">
-                                <span className="flex items-center gap-1">
-                                  <Eye className="h-3 w-3" />
-                                  {article.views}
-                                </span>
-                                <span className="flex items-center gap-1">
-                                  <Heart className="h-3 w-3" />
-                                  {article.likes}
-                                </span>
-                              </div>
-                            </div>
-                            
-                            <Button className="w-full mt-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white group-hover:scale-105 transition-all duration-200" asChild>
-                              <Link href={`/explorations/${article.id}`}>
-                                阅读全文 <ArrowRight className="ml-2 h-4 w-4" />
-                              </Link>
-                            </Button>
-                          </CardContent>
-                        </Card>
-                      </ScrollReveal>
-                    ))}
-                  </div>
-                </section>
-              </ScrollReveal>
-            )}
-
-            {/* Regular Articles */}
-            {regularArticles.length > 0 && (
-              <ScrollReveal delay={800}>
-                <section>
-                  <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
-                    <span className="w-1 h-6 bg-gradient-to-b from-gray-500 to-gray-600 rounded"></span>
-                    所有文章
-                  </h2>
-                  
-                  <div className="grid gap-6">
-                    {regularArticles.map((article, index) => (
-                      <ScrollReveal key={article.id} delay={1000 + index * 100}>
-                        <Card className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 cursor-pointer group hover:shadow-lg">
-                          <CardContent className="p-6">
-                            <div className="flex flex-col md:flex-row gap-6">
-                              <div className="md:w-32 h-32 rounded-lg flex-shrink-0 relative overflow-hidden">
-                                {article.image ? (
-                                  <Image
-                                    src={article.image}
-                                    alt={article.title}
-                                    fill
-                                    className="object-cover rounded-lg"
-                                  />
-                                ) : (
-                                  <div className={`h-full bg-gradient-to-br ${article.gradient} rounded-lg`} />
-                                )}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg" />
-                                <div className="absolute bottom-2 left-2">
-                                  <Badge variant="secondary" className="text-xs bg-slate-900/80 text-purple-300">{article.category}</Badge>
-                                </div>
-                              </div>
-                              
-                              <div className="flex-1">
-                                <div className="flex items-center gap-4 text-sm text-gray-500 mb-2">
-                                  <span className="flex items-center gap-1">
-                                    <Calendar className="h-3 w-3" />
-                                    {article.date}
-                                  </span>
-                                  <span>{article.readTime}</span>
-                                  <div className="flex items-center gap-3 ml-auto">
-                                    <span className="flex items-center gap-1">
-                                      <Eye className="h-3 w-3" />
-                                      {article.views}
-                                    </span>
-                                    <span className="flex items-center gap-1">
-                                      <Heart className="h-3 w-3" />
-                                      {article.likes}
-                                    </span>
-                                    <span className="flex items-center gap-1">
-                                      <MessageCircle className="h-3 w-3" />
-                                      {article.comments}
-                                    </span>
-                                  </div>
-                                </div>
-                                
-                                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-purple-300 transition-colors">
-                                  {article.title}
-                                </h3>
-                                
-                                <p className="text-gray-400 mb-4 line-clamp-2">
-                                  {article.excerpt}
-                                </p>
-                                
-                                <div className="flex items-center justify-between">
-                                  <div className="flex flex-wrap gap-1">
-                                    {article.tags.slice(0, 4).map((tag) => (
-                                      <Badge key={tag} variant="outline" className="text-xs border-purple-400/50 text-purple-300 hover:bg-purple-500/20 transition-colors">
-                                        {tag}
-                                      </Badge>
-                                    ))}
-                                  </div>
-                                  
-                                  <Button variant="ghost" size="sm" className="text-purple-300 hover:bg-purple-500/20 transition-colors" asChild>
-                                    <Link href={`/explorations/${article.id}`}>
-                                      阅读更多 <ArrowRight className="ml-1 h-3 w-3" />
-                                    </Link>
-                                  </Button>
-                                </div>
-                              </div>
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </ScrollReveal>
-                    ))}
-                  </div>
-                </section>
-              </ScrollReveal>
-            )}
-
-            {/* No Results */}
-            {filteredArticles.length === 0 && (
-              <ScrollReveal delay={600}>
-                <div className="text-center py-16">
-                  <div className="text-6xl mb-4">🔍</div>
-                  <h3 className="text-xl font-semibold text-white mb-2">没有找到相关文章</h3>
-                  <p className="text-gray-400 mb-6">尝试调整搜索关键词或选择不同的分类</p>
-                  <Button 
-                    onClick={() => {setSearchTerm(""); setSelectedCategory("全部")}}
-                    className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white"
-                  >
-                    重置筛选条件
-                  </Button>
-                </div>
-              </ScrollReveal>
-            )}
 
             {/* Newsletter Signup */}
             <ScrollReveal delay={1200}>

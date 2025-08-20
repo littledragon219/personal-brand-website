@@ -93,7 +93,7 @@ const skillCategories = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative bg-[#1A1A2E]">
       <BackgroundEffects />
       
       <div className="relative z-10 py-16">
@@ -102,12 +102,12 @@ export default function AboutPage() {
             {/* Header */}
             <ScrollReveal>
               <div className="text-center mb-16">
-                <div className="inline-block p-1 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 mb-6">
-                  <div className="bg-slate-900 rounded-full px-6 py-2">
-                    <span className="text-purple-400 text-sm font-medium">关于我的故事</span>
+                <div className="inline-block p-1 rounded-full bg-gradient-to-r from-[#00FFC2]/20 to-[#00FFC2]/10 mb-6">
+                  <div className="bg-black/60 rounded-full px-6 py-2">
+                    <span className="text-[#00FFC2] text-sm font-medium">关于我的故事</span>
                   </div>
                 </div>
-                <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent mb-6">
+                <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-[#00FFC2] bg-clip-text text-transparent mb-6">
                   关于我
                 </h1>
                 <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -124,17 +124,17 @@ export default function AboutPage() {
                 <div className="space-y-8">
                   {journeyItems.map((item, index) => (
                     <ScrollReveal key={index} delay={index * 100}>
-                      <Card className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group">
+                      <Card className="bg-black/60 backdrop-blur-sm border border-[#00FFC2]/20 hover:border-[#00FFC2]/40 transition-all duration-300 group">
                         <CardHeader>
                           <div className="flex items-center gap-4">
                             <div className={`w-16 h-16 bg-gradient-to-br ${item.colorClasses} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                               <span className="text-2xl">{item.icon}</span>
                             </div>
                             <div className="flex-1">
-                              <CardTitle className="text-white group-hover:text-purple-300 transition-colors">
+                              <CardTitle className="text-white group-hover:text-[#00FFC2] transition-colors">
                                 {item.title}
                               </CardTitle>
-                              <CardDescription className="text-purple-300">
+                              <CardDescription className="text-[#00FFC2]">
                                 {item.subtitle}
                               </CardDescription>
                             </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
                           </p>
                           <div className="flex flex-wrap gap-2">
                             {item.tags.map((tag, tagIndex) => (
-                              <Badge key={tagIndex} variant="outline" className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 transition-colors">
+                              <Badge key={tagIndex} variant="outline" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 transition-colors">
                                 {tag}
                               </Badge>
                             ))}
@@ -164,7 +164,7 @@ export default function AboutPage() {
               <section className="mb-16">
                 <h2 className="text-3xl font-bold text-white mb-8 text-center">我的理念</h2>
                 
-                <Card className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 backdrop-blur-sm">
+                <Card className="bg-black/60 border border-[#00FFC2]/30 backdrop-blur-sm">
                   <CardContent className="p-8">
                     <blockquote className="text-lg text-gray-200 leading-relaxed italic text-center">
                       "我相信，下一个时代的伟大产品将诞生于物理与数字的交汇处。从舞龙舞狮的团队协作到智能机械臂的算法开发，
@@ -178,12 +178,12 @@ export default function AboutPage() {
                 <div className="grid md:grid-cols-3 gap-6 mt-8">
                   {philosophyItems.map((item, index) => (
                     <ScrollReveal key={index} delay={600 + index * 100}>
-                      <Card className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group text-center">
+                      <Card className="bg-black/60 backdrop-blur-sm border border-[#00FFC2]/20 hover:border-[#00FFC2]/40 transition-all duration-300 group text-center">
                         <CardHeader>
                           <div className={`w-16 h-16 bg-gradient-to-br ${item.colorClasses} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                             <span className="text-2xl">{item.icon}</span>
                           </div>
-                          <CardTitle className="text-white group-hover:text-purple-300 transition-colors">
+                          <CardTitle className="text-white group-hover:text-[#00FFC2] transition-colors">
                             {item.title}
                           </CardTitle>
                         </CardHeader>
@@ -206,9 +206,9 @@ export default function AboutPage() {
                 
                 <div className="grid md:grid-cols-3 gap-8">
                   {skillCategories.map((category, index) => (
-                    <Card key={index} className="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group">
+                    <Card key={index} className="bg-black/60 backdrop-blur-sm border border-[#00FFC2]/20 hover:border-[#00FFC2]/40 transition-all duration-300 group">
                       <CardHeader>
-                        <CardTitle className="flex items-center gap-2 text-white group-hover:text-purple-300 transition-colors">
+                        <CardTitle className="flex items-center gap-2 text-white group-hover:text-[#00FFC2] transition-colors">
                           <div className={`w-12 h-12 bg-gradient-to-br ${category.colorClasses} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                             <span className="text-xl">{category.icon}</span>
                           </div>
@@ -218,7 +218,7 @@ export default function AboutPage() {
                       <CardContent>
                         <div className="flex flex-wrap gap-2">
                           {category.skills.map((skill, skillIndex) => (
-                            <Badge key={skillIndex} variant="outline" className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 transition-colors">
+                            <Badge key={skillIndex} variant="outline" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 transition-colors">
                               {skill}
                             </Badge>
                           ))}
@@ -236,14 +236,14 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-white mb-8 text-center">主要成就</h2>
                 
                 <div className="grid md:grid-cols-2 gap-6">
-                  <Card className="bg-gradient-to-br from-yellow-900/30 to-orange-900/30 border border-yellow-500/30 backdrop-blur-sm">
+                  <Card className="bg-black/60 border border-[#00FFC2]/30 backdrop-blur-sm">
                     <CardHeader>
-                      <CardTitle className="text-yellow-300 flex items-center gap-2">
+                      <CardTitle className="text-[#00FFC2] flex items-center gap-2">
                         🏆 竞赛获奖
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <ul className="space-y-2 text-yellow-200">
+                      <ul className="space-y-2 text-gray-300">
                         <li>• 2024年第十六届中国大学生舞龙舞狮锦标赛全国季军</li>
                         <li>• 2025年大学生创新大赛校赛银奖</li>
                         <li>• 第六届探索者杯机器人竞赛校赛二等奖</li>
@@ -252,14 +252,14 @@ export default function AboutPage() {
                     </CardContent>
                   </Card>
 
-                  <Card className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border border-blue-500/30 backdrop-blur-sm">
+                  <Card className="bg-black/60 border border-[#00FFC2]/30 backdrop-blur-sm">
                     <CardHeader>
-                      <CardTitle className="text-blue-300 flex items-center gap-2">
+                      <CardTitle className="text-[#00FFC2] flex items-center gap-2">
                         💡 技术创新
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <ul className="space-y-2 text-blue-200">
+                      <ul className="space-y-2 text-gray-300">
                         <li>• 智能无损抓取机械臂：0.01N力控分辨率</li>
                         <li>• 层级化原型网络设计与实现</li>
                         <li>• 零样本推理在机器人抓取中的应用</li>
@@ -282,12 +282,12 @@ export default function AboutPage() {
                     查看我的项目作品，或者直接与我开始对话
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button size="lg" className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white transform hover:scale-105 transition-all duration-200" asChild>
+                    <Button size="lg" className="bg-[#00FFC2] text-black hover:bg-[#00FFC2]/80 transform hover:scale-105 transition-all duration-200" asChild>
                       <Link href="/projects">
                         查看我的项目 <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
-                    <Button size="lg" variant="outline" className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400 transform hover:scale-105 transition-all duration-200" asChild>
+                    <Button size="lg" variant="outline" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 hover:border-[#00FFC2] transform hover:scale-105 transition-all duration-200" asChild>
                       <Link href="/contact">
                         联系我
                       </Link>

@@ -128,7 +128,7 @@ export default function ProjectsPage() {
   ]
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative bg-[#1A1A2E]">
       <BackgroundEffects />
       
       <div className="relative z-10 py-16">
@@ -137,12 +137,12 @@ export default function ProjectsPage() {
             {/* Header */}
             <ScrollReveal>
               <div className="text-center mb-16">
-                <div className="inline-block p-1 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 mb-6">
-                  <div className="bg-slate-900 rounded-full px-6 py-2">
-                    <span className="text-purple-400 text-sm font-medium">我的作品集</span>
+                <div className="inline-block p-1 rounded-full bg-gradient-to-r from-[#00FFC2]/20 to-[#00FFC2]/10 mb-6">
+                  <div className="bg-black/60 rounded-full px-6 py-2">
+                    <span className="text-[#00FFC2] text-sm font-medium">我的作品集</span>
                   </div>
                 </div>
-                <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent mb-6">
+                <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-[#00FFC2] bg-clip-text text-transparent mb-6">
                   项目集
                 </h1>
                 <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -156,10 +156,10 @@ export default function ProjectsPage() {
               <section className="mb-16">
                 <div className="flex items-center gap-4 mb-8">
                   <h2 className="text-3xl font-bold text-white">核心项目</h2>
-                  <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white">重点推荐</Badge>
+                  <Badge className="bg-gradient-to-r from-[#00FFC2] to-teal-500 text-black">重点推荐</Badge>
                 </div>
                 
-                <Card className="overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-purple-500/30 hover:border-purple-400/50 transition-all duration-300 group shadow-2xl">
+                <Card className="overflow-hidden bg-black/60 backdrop-blur-sm border border-[#00FFC2]/30 hover:border-[#00FFC2]/50 transition-all duration-300 group shadow-2xl">
                   <div className="grid lg:grid-cols-2">
                     <div className="relative h-64 lg:h-full overflow-hidden">
                       <Image
@@ -168,14 +168,14 @@ export default function ProjectsPage() {
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#00FFC2]/20 to-transparent" />
                     </div>
                     <CardContent className="p-8 flex flex-col justify-center">
                       <CardHeader className="p-0 mb-6">
-                        <CardTitle className="text-2xl text-white group-hover:text-purple-300 transition-colors">
+                        <CardTitle className="text-2xl text-white group-hover:text-[#00FFC2] transition-colors">
                           智能无损抓取机械臂
                         </CardTitle>
-                        <CardDescription className="text-base text-purple-300">
+                        <CardDescription className="text-base text-[#00FFC2]">
                           我的代表作品 - "触觉感知-柔性控制-特征迁移"三位一体系统
                         </CardDescription>
                       </CardHeader>
@@ -197,7 +197,7 @@ export default function ProjectsPage() {
                         
                         <div className="flex flex-wrap gap-2">
                           {["力控算法", "原型网络", "零样本推理", "树莓派"].map((tag, index) => (
-                            <Badge key={index} variant="outline" className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 transition-colors">
+                            <Badge key={index} variant="outline" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 transition-colors">
                               {tag}
                             </Badge>
                           ))}
@@ -205,12 +205,12 @@ export default function ProjectsPage() {
                       </div>
 
                       <div className="flex gap-3">
-                        <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white transform hover:scale-105 transition-all duration-200" asChild>
+                        <Button className="bg-gradient-to-r from-[#00FFC2] to-teal-500 hover:from-[#00FFC2]/80 hover:to-teal-600 text-black transform hover:scale-105 transition-all duration-200" asChild>
                           <Link href="/projects/intelligent-grasping-robot">
                             详细案例分析 <ArrowRight className="ml-2 h-4 w-4" />
                           </Link>
                         </Button>
-                        <Button variant="outline" size="sm" className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400 transition-colors" asChild>
+                        <Button variant="outline" size="sm" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 hover:border-[#00FFC2] transition-colors" asChild>
                           <Link href="https://github.com" target="_blank">
                             <Github className="mr-2 h-4 w-4" /> 代码
                           </Link>
@@ -230,7 +230,7 @@ export default function ProjectsPage() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {projects.slice(1).map((project, index) => (
                     <ScrollReveal key={project.id} delay={600 + index * 100}>
-                      <Card className="overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group hover:shadow-xl">
+                      <Card className="overflow-hidden bg-black/60 backdrop-blur-sm border border-[#00FFC2]/20 hover:border-[#00FFC2]/40 transition-all duration-300 group hover:shadow-xl">
                         <div className="relative h-48">
                           <Image
                             src={project.image || "/placeholder.svg"}
@@ -239,7 +239,7 @@ export default function ProjectsPage() {
                             className="object-cover group-hover:scale-110 transition-transform duration-300"
                           />
                           <div className="absolute top-4 left-4">
-                            <Badge className="bg-slate-900/80 text-purple-300 border border-purple-400/50">
+                            <Badge className="bg-black/80 text-[#00FFC2] border border-[#00FFC2]/50">
                               {project.status}
                             </Badge>
                           </div>
@@ -248,19 +248,19 @@ export default function ProjectsPage() {
                         
                         <CardContent className="p-6">
                           <CardHeader className="p-0 mb-4">
-                            <CardTitle className="text-lg text-white group-hover:text-purple-300 transition-colors">
+                            <CardTitle className="text-lg text-white group-hover:text-[#00FFC2] transition-colors">
                               {project.title}
                             </CardTitle>
-                            <CardDescription className="text-sm text-gray-400">
+                            <CardDescription className="text-sm text-gray-300">
                               {project.description}
                             </CardDescription>
-                            <p className="text-xs text-purple-400 font-medium">{project.role}</p>
+                            <p className="text-xs text-[#00FFC2] font-medium">{project.role}</p>
                           </CardHeader>
                           
                           <div className="space-y-4">
                             <div className="flex flex-wrap gap-1">
                               {project.tags.slice(0, 4).map((tag, tagIndex) => (
-                                <Badge key={tagIndex} variant="outline" className="text-xs border-purple-400/50 text-purple-300 hover:bg-purple-500/20 transition-colors">
+                                <Badge key={tagIndex} variant="outline" className="text-xs border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 transition-colors">
                                   {tag}
                                 </Badge>
                               ))}
@@ -293,7 +293,7 @@ export default function ProjectsPage() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {experiences.map((experience, index) => (
                     <ScrollReveal key={experience.id} delay={1000 + index * 100}>
-                      <Card className="overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group hover:shadow-xl">
+                      <Card className="overflow-hidden bg-black/60 backdrop-blur-sm border border-[#00FFC2]/20 hover:border-[#00FFC2]/40 transition-all duration-300 group hover:shadow-xl">
                         <div className="relative h-48">
                           <Image
                             src={experience.image || "/placeholder.svg"}
@@ -302,7 +302,7 @@ export default function ProjectsPage() {
                             className="object-cover group-hover:scale-110 transition-transform duration-300"
                           />
                           <div className="absolute top-4 left-4">
-                            <Badge className="bg-slate-900/80 text-purple-300 border border-purple-400/50">
+                            <Badge className="bg-black/80 text-[#00FFC2] border border-[#00FFC2]/50">
                               {experience.status}
                             </Badge>
                           </div>
@@ -311,19 +311,19 @@ export default function ProjectsPage() {
                         
                         <CardContent className="p-6">
                           <CardHeader className="p-0 mb-4">
-                            <CardTitle className="text-lg text-white group-hover:text-purple-300 transition-colors">
+                            <CardTitle className="text-lg text-white group-hover:text-[#00FFC2] transition-colors">
                               {experience.title}
                             </CardTitle>
-                            <CardDescription className="text-sm text-gray-400">
+                            <CardDescription className="text-sm text-gray-300">
                               {experience.description}
                             </CardDescription>
-                            <p className="text-xs text-purple-400 font-medium">{experience.role}</p>
+                            <p className="text-xs text-[#00FFC2] font-medium">{experience.role}</p>
                           </CardHeader>
                           
                           <div className="space-y-4">
                             <div className="flex flex-wrap gap-1">
                               {experience.tags.slice(0, 4).map((tag, tagIndex) => (
-                                <Badge key={tagIndex} variant="outline" className="text-xs border-purple-400/50 text-purple-300 hover:bg-purple-500/20 transition-colors">
+                                <Badge key={tagIndex} variant="outline" className="text-xs border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 transition-colors">
                                   {tag}
                                 </Badge>
                               ))}
@@ -354,7 +354,7 @@ export default function ProjectsPage() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {workExperiences.map((work, index) => (
                     <ScrollReveal key={work.id} delay={1400 + index * 100}>
-                      <Card className="overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group hover:shadow-xl">
+                      <Card className="overflow-hidden bg-black/60 backdrop-blur-sm border border-[#00FFC2]/20 hover:border-[#00FFC2]/40 transition-all duration-300 group hover:shadow-xl">
                         <div className="relative h-48">
                           <Image
                             src={work.image || "/placeholder.svg"}
@@ -363,7 +363,7 @@ export default function ProjectsPage() {
                             className="object-cover group-hover:scale-110 transition-transform duration-300"
                           />
                           <div className="absolute top-4 left-4">
-                            <Badge className="bg-slate-900/80 text-purple-300 border border-purple-400/50">
+                            <Badge className="bg-black/80 text-[#00FFC2] border border-[#00FFC2]/50">
                               {work.status}
                             </Badge>
                           </div>
@@ -372,19 +372,19 @@ export default function ProjectsPage() {
                         
                         <CardContent className="p-6">
                           <CardHeader className="p-0 mb-4">
-                            <CardTitle className="text-lg text-white group-hover:text-purple-300 transition-colors">
+                            <CardTitle className="text-lg text-white group-hover:text-[#00FFC2] transition-colors">
                               {work.title}
                             </CardTitle>
-                            <CardDescription className="text-sm text-gray-400">
+                            <CardDescription className="text-sm text-gray-300">
                               {work.description}
                             </CardDescription>
-                            <p className="text-xs text-purple-400 font-medium">{work.role}</p>
+                            <p className="text-xs text-[#00FFC2] font-medium">{work.role}</p>
                           </CardHeader>
                           
                           <div className="space-y-4">
                             <div className="flex flex-wrap gap-1">
                               {work.tags.slice(0, 4).map((tag, tagIndex) => (
-                                <Badge key={tagIndex} variant="outline" className="text-xs border-purple-400/50 text-purple-300 hover:bg-purple-500/20 transition-colors">
+                                <Badge key={tagIndex} variant="outline" className="text-xs border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 transition-colors">
                                   {tag}
                                 </Badge>
                               ))}
@@ -409,7 +409,7 @@ export default function ProjectsPage() {
 
             {/* Skills Showcase */}
             <ScrollReveal delay={1600}>
-              <section className="mt-16 bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-2xl p-8 border border-purple-500/30 backdrop-blur-sm">
+              <section className="mt-16 bg-gradient-to-br from-black/40 to-slate-900/40 rounded-2xl p-8 border border-[#00FFC2]/30 backdrop-blur-sm">
                 <h3 className="text-2xl font-bold text-white mb-6 text-center">
                   项目中体现的核心能力
                 </h3>
@@ -422,11 +422,11 @@ export default function ProjectsPage() {
                     { icon: "🏆", title: "执行力", desc: "从想法到成果的完整实现能力", color: "from-orange-500/20 to-red-500/20" }
                   ].map((item, index) => (
                     <div key={index} className="text-center group cursor-pointer">
-                      <div className={`w-16 h-16 bg-gradient-to-br ${item.color} border border-purple-400/50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300`}>
+                      <div className={`w-16 h-16 bg-gradient-to-br ${item.color} border border-[#00FFC2]/50 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300`}>
                         <span className="text-2xl">{item.icon}</span>
                       </div>
-                      <h4 className="font-semibold text-white mb-2 group-hover:text-purple-300 transition-colors">{item.title}</h4>
-                      <p className="text-sm text-gray-400">{item.desc}</p>
+                      <h4 className="font-semibold text-white mb-2 group-hover:text-[#00FFC2] transition-colors">{item.title}</h4>
+                      <p className="text-sm text-gray-300">{item.desc}</p>
                     </div>
                   ))}
                 </div>
@@ -444,12 +444,12 @@ export default function ProjectsPage() {
                     每个项目背后都有完整的思考过程和实现细节
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button size="lg" className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white transform hover:scale-105 transition-all duration-200" asChild>
+                    <Button size="lg" className="bg-gradient-to-r from-[#00FFC2] to-cyan-400 hover:from-[#00FFC2]/80 hover:to-cyan-400/80 text-black transform hover:scale-105 transition-all duration-200" asChild>
                       <Link href="/contact">
                         与我深入交流 <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
-                    <Button size="lg" variant="outline" className="border-purple-400/50 text-purple-300 hover:bg-purple-500/20 hover:border-purple-400 transform hover:scale-105 transition-all duration-200" asChild>
+                    <Button size="lg" variant="outline" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 hover:border-[#00FFC2] transform hover:scale-105 transition-all duration-200" asChild>
                       <Link href="/explorations">
                         阅读我的思考
                       </Link>

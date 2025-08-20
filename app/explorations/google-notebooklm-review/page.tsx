@@ -20,11 +20,11 @@ export default function NotebookLMReviewPage() {
   }
 
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen py-16 bg-[#1A1A2E]">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Back Button */}
-          <Button variant="ghost" className="mb-8" asChild>
+          <Button variant="ghost" className="mb-8 text-white hover:bg-[#00FFC2]/20 hover:text-[#00FFC2]" asChild>
             <Link href="/explorations">
               <ArrowLeft className="mr-2 h-4 w-4" /> 返回探索页面
             </Link>
@@ -32,22 +32,22 @@ export default function NotebookLMReviewPage() {
 
           {/* Article Header */}
           <div className="mb-12">
-            <Badge className="mb-4">AI工具评测</Badge>
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">
+            <Badge className="mb-4 bg-[#00FFC2] text-black">AI工具评测</Badge>
+            <h1 className="text-4xl font-bold text-white mb-6">
               对Google NotebookLM深度体验的报告
             </h1>
             
-            <div className="flex items-center gap-6 text-gray-600 mb-6">
+            <div className="flex items-center gap-6 text-gray-300 mb-6">
               <span className="flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
+                <Calendar className="h-4 w-4 text-[#00FFC2]" />
                 2024年1月20日
               </span>
               <span className="flex items-center gap-2">
-                <Clock className="h-4 w-4" />
+                <Clock className="h-4 w-4 text-[#00FFC2]" />
                 15分钟阅读
               </span>
               <span className="flex items-center gap-2">
-                <Eye className="h-4 w-4" />
+                <Eye className="h-4 w-4 text-[#00FFC2]" />
                 2,156 次阅读
               </span>
             </div>
@@ -77,7 +77,7 @@ export default function NotebookLMReviewPage() {
             </div>
 
             <div className="prose prose-lg max-w-none">
-              <p className="text-xl text-gray-600 leading-relaxed mb-8">
+              <p className="text-xl text-gray-300 leading-relaxed mb-8">
                 在AI 2.0时代，我们正经历一个关键的范式转型：从追求模型的"无限创造力"转向追求应用的"绝对可靠性"。
                 作为深度AI使用用户，我正寻找能有效解决"信息过载"和"知识孤岛"两大痛点的解决方案。
                 Google NotebookLM的出现，正是为了应对这一挑战。
@@ -87,121 +87,121 @@ export default function NotebookLMReviewPage() {
 
           {/* Article Content */}
           <div className="prose prose-lg max-w-none mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <Target className="h-6 w-6 text-blue-500" />
+            <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+              <Target className="h-6 w-6 text-[#00FFC2]" />
               一、引言
             </h2>
             
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">1.1 背景与目标</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h3 className="text-xl font-semibold text-white mb-3">1.1 背景与目标</h3>
+            <p className="text-gray-300 leading-relaxed mb-4">
               在AI 2.0时代，我们正经历一个关键的范式转型：从追求模型的"无限创造力"转向追求应用的"绝对可靠性"。
               通用型AI（如ChatGPT）在开放域对话中表现出色，但其"幻觉"问题使其在专业的知识工作中屡屡碰壁。
               我在我的专业学习中也是深度AI使用用户，正寻找能有效解决"信息过载"和"知识孤岛"两大痛点的解决方案。
             </p>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-300 leading-relaxed mb-6">
               国内推出了秘塔，而谷歌推出了NotebookLM。Google NotebookLM的出现，正是为了应对这一挑战——
               它承诺将用户个人拥有的、可信的、杂乱无章的信息，转化为一个结构化、可对话的专属知识大脑。
               本文将尝试把个人体验视角与背后实现技术相结合。
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">1.2 报告核心问题</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h3 className="text-xl font-semibold text-white mb-3">1.2 报告核心问题</h3>
+            <p className="text-gray-300 leading-relaxed mb-4">
               本报告旨在回答以下几个关键体验问题：
             </p>
             
             <div className="grid md:grid-cols-2 gap-4 mb-8">
-              <Card className="border-blue-200 bg-blue-50">
+              <Card className="border-[#00FFC2]/30 bg-black/60">
                 <CardContent className="p-4">
-                  <h4 className="font-semibold text-blue-900 mb-2 flex items-center gap-2">
+                  <h4 className="font-semibold text-[#00FFC2] mb-2 flex items-center gap-2">
                     <CheckCircle className="h-4 w-4" />
                     核心价值验证
                   </h4>
-                  <p className="text-blue-800 text-sm">
+                  <p className="text-gray-300 text-sm">
                     "源于个人信息"的模式，是否真的能有效杜绝信息幻觉，建立用户信任？
                   </p>
                 </CardContent>
               </Card>
               
-              <Card className="border-green-200 bg-green-50">
+              <Card className="border-[#00FFC2]/30 bg-black/60">
                 <CardContent className="p-4">
-                  <h4 className="font-semibold text-green-900 mb-2 flex items-center gap-2">
+                  <h4 className="font-semibold text-[#00FFC2] mb-2 flex items-center gap-2">
                     <Zap className="h-4 w-4" />
                     创新功能评估
                   </h4>
-                  <p className="text-green-800 text-sm">
+                  <p className="text-gray-300 text-sm">
                     "音频总览"、"思维导图"等特色功能，是噱头还是能切实提升效率的"游戏规则改变者"？
                   </p>
                 </CardContent>
               </Card>
               
-              <Card className="border-orange-200 bg-orange-50">
+              <Card className="border-[#00FFC2]/30 bg-black/60">
                 <CardContent className="p-4">
-                  <h4 className="font-semibold text-orange-900 mb-2 flex items-center gap-2">
+                  <h4 className="font-semibold text-[#00FFC2] mb-2 flex items-center gap-2">
                     <AlertTriangle className="h-4 w-4" />
                     技术瓶颈探查
                   </h4>
-                  <p className="text-orange-800 text-sm">
+                  <p className="text-gray-300 text-sm">
                     宣传的百万级Token上下文窗口，在真实使用场景中的表现如何？是否存在未被提及的限制？
                   </p>
                 </CardContent>
               </Card>
               
-              <Card className="border-purple-200 bg-purple-50">
+              <Card className="border-[#00FFC2]/30 bg-black/60">
                 <CardContent className="p-4">
-                  <h4 className="font-semibold text-purple-900 mb-2 flex items-center gap-2">
+                  <h4 className="font-semibold text-[#00FFC2] mb-2 flex items-center gap-2">
                     <Target className="h-4 w-4" />
                     生态定位分析
                   </h4>
-                  <p className="text-purple-800 text-sm">
+                  <p className="text-gray-300 text-sm">
                     NotebookLM在现有的笔记软件（Notion, Obsidian）和AI工具（Perplexity）生态中，应该扮演何种角色？
                   </p>
                 </CardContent>
               </Card>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <Brain className="h-6 w-6 text-emerald-500" />
+            <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+              <Brain className="h-6 w-6 text-[#00FFC2]" />
               二、产品概览
             </h2>
             
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">2.1 功能模块</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h3 className="text-xl font-semibold text-white mb-3">2.1 功能模块</h3>
+            <p className="text-gray-300 leading-relaxed mb-4">
               NotebookLM的核心功能可归纳为四大模块：
             </p>
 
             <div className="space-y-6 mb-8">
-              <Card className="border-l-4 border-l-blue-500">
+              <Card className="border-l-4 border-l-[#00FFC2] bg-black/60">
                 <CardContent className="p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">📁 信源管理 (Source Management)</h4>
-                  <p className="text-gray-700">
+                  <h4 className="font-semibold text-white mb-3">📁 信源管理 (Source Management)</h4>
+                  <p className="text-gray-300">
                     支持多种格式（PDF, Docs, Slides, URL, YouTube, Audio, Text）的信息输入，构建项目专属的知识库。
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-green-500">
+              <Card className="border-l-4 border-l-[#00FFC2] bg-black/60">
                 <CardContent className="p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">💬 对话式问答 (Conversational Q&A)</h4>
-                  <p className="text-gray-700 mb-3">
+                  <h4 className="font-semibold text-white mb-3">💬 对话式问答 (Conversational Q&A)</h4>
+                  <p className="text-gray-300 mb-3">
                     基于RAG（检索增强生成）的核心交互界面，允许用户与自己的信源进行自然语言对话。
                     核心优势在于他的跨文档信息合成能力。但要注意的是问答的输出质量与提问问题的准确与具体性直接相关。
                   </p>
-                  <p className="text-gray-700">
+                  <p className="text-gray-300">
                     为了帮助用户入门，系统会根据上传的文档内容自动生成建议性问题。
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-purple-500">
+              <Card className="border-l-4 border-l-[#00FFC2] bg-black/60">
                 <CardContent className="p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">🧠 知识合成 (Knowledge Synthesis)</h4>
-                  <p className="text-gray-700 mb-3">
+                  <h4 className="font-semibold text-white mb-3">🧠 知识合成 (Knowledge Synthesis)</h4>
+                  <p className="text-gray-300 mb-3">
                     "笔记本指南"(Notebook Guide) 中的一键式分析工具，能将原始信息转化为结构化洞察，
                     如摘要、FAQ、时间轴、思维导图。
                   </p>
-                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-4">
-                    <h5 className="font-semibold text-yellow-900 mb-2">🎧 音频总览亮点功能</h5>
-                    <p className="text-yellow-800 text-sm">
+                  <div className="bg-[#00FFC2]/10 border border-[#00FFC2]/30 rounded-lg p-4 mt-4">
+                    <h5 className="font-semibold text-[#00FFC2] mb-2">🎧 音频总览亮点功能</h5>
+                    <p className="text-gray-300 text-sm">
                       值得惊喜的是NotebookLM提供了音频总览（Audio Overview）的功能，这个功能的核心在于将信源的内容转换成一场由两个AI主播进行播客式的深度讨论。
                       他们的创新点在于这个播客不是简单的文本转语音，而是一场动态互动的材料解读。
                       例如在AI主播之间会互相提问、补充和总结，尽可能模拟真实播客的环境。
@@ -212,23 +212,23 @@ export default function NotebookLMReviewPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-orange-500">
+              <Card className="border-l-4 border-l-[#00FFC2] bg-black/60">
                 <CardContent className="p-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">🤝 分享与协作 (Sharing & Collaboration)</h4>
-                  <p className="text-gray-700">
+                  <h4 className="font-semibold text-white mb-3">🤝 分享与协作 (Sharing & Collaboration)</h4>
+                  <p className="text-gray-300">
                     支持将笔记本以公开链接或邮件形式分享给他人。
                   </p>
                 </CardContent>
               </Card>
             </div>
 
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">2.2 技术架构简述</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <h3 className="text-xl font-semibold text-white mb-3">2.2 技术架构简述</h3>
+            <p className="text-gray-300 leading-relaxed mb-4">
               从产品体验反推，其技术架构清晰地围绕RAG展开：
             </p>
 
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold mb-4">核心工作流图示：</h4>
+            <div className="bg-black/60 border border-[#00FFC2]/20 p-6 rounded-lg mb-6">
+              <h4 className="font-semibold text-white mb-4">核心工作流图示：</h4>
               <div className="flex flex-wrap items-center gap-2 text-sm">
                 <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded">用户上传信源</span>
                 <ArrowRight className="h-4 w-4 text-gray-400" />
@@ -257,7 +257,7 @@ export default function NotebookLMReviewPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mb-8">
-              <Card className="border-red-200 bg-red-50">
+              <Card className="border-red-500/30 bg-red-900/20">
                 <CardContent className="p-4">
                   <h4 className="font-semibold text-red-900 mb-2">❌ 无"白板"式编辑器</h4>
                   <p className="text-red-800 text-sm">
@@ -267,7 +267,7 @@ export default function NotebookLMReviewPage() {
                 </CardContent>
               </Card>
               
-              <Card className="border-red-200 bg-red-50">
+              <Card className="border-red-500/30 bg-red-900/20">
                 <CardContent className="p-4">
                   <h4 className="font-semibold text-red-900 mb-2">❌ 格式化功能简陋</h4>
                   <p className="text-red-800 text-sm">
@@ -276,7 +276,7 @@ export default function NotebookLMReviewPage() {
                 </CardContent>
               </Card>
               
-              <Card className="border-red-200 bg-red-50">
+              <Card className="border-red-500/30 bg-red-900/20">
                 <CardContent className="p-4">
                   <h4 className="font-semibold text-red-900 mb-2">❌ 无网页剪藏器</h4>
                   <p className="text-red-800 text-sm">
@@ -286,7 +286,7 @@ export default function NotebookLMReviewPage() {
                 </CardContent>
               </Card>
               
-              <Card className="border-red-200 bg-red-50">
+              <Card className="border-red-500/30 bg-red-900/20">
                 <CardContent className="p-4">
                   <h4 className="font-semibold text-red-900 mb-2">❌ 组织能力有限</h4>
                   <p className="text-red-800 text-sm">
@@ -302,7 +302,7 @@ export default function NotebookLMReviewPage() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Card className="border-green-200 bg-green-50">
+              <Card className="border-green-500/30 bg-green-900/20">
                 <CardHeader>
                   <CardTitle className="text-green-800 flex items-center gap-2">
                     <CheckCircle className="h-5 w-5" />
@@ -339,7 +339,7 @@ export default function NotebookLMReviewPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-red-200 bg-red-50">
+              <Card className="border-red-500/30 bg-red-900/20">
                 <CardHeader>
                   <CardTitle className="text-red-800 flex items-center gap-2">
                     <AlertTriangle className="h-5 w-5" />
@@ -379,7 +379,7 @@ export default function NotebookLMReviewPage() {
             <h3 className="text-xl font-semibold text-gray-900 mb-3">4.1 最佳实践指南</h3>
             
             <div className="space-y-4 mb-8">
-              <Card className="border-blue-200 bg-blue-50">
+              <Card className="border-purple-500/30 bg-slate-700/30">
                 <CardContent className="p-4">
                   <h4 className="font-semibold text-blue-900 mb-2">💡 定位为"精加工工具"</h4>
                   <p className="text-blue-800 text-sm">
@@ -389,7 +389,7 @@ export default function NotebookLMReviewPage() {
                 </CardContent>
               </Card>
               
-              <Card className="border-green-200 bg-green-50">
+              <Card className="border-green-500/30 bg-green-900/20">
                 <CardContent className="p-4">
                   <h4 className="font-semibold text-green-900 mb-2">🍽️ "少食多餐"原则</h4>
                   <p className="text-green-800 text-sm">
@@ -464,7 +464,7 @@ export default function NotebookLMReviewPage() {
                   ChatGPT可以提供宽泛、创意但可能有"幻觉"的回答，而NotebookLM提供的是可靠且可验证的垂直领域的回答。
                 </p>
                 
-                <div className="bg-white/70 rounded-lg p-4 mt-4">
+                <div className="bg-slate-700/70 rounded-lg p-4 mt-4">
                   <h4 className="font-semibold text-gray-900 mb-3">💡 使用建议</h4>
                   <div className="space-y-2 text-gray-700">
                     <p><strong>如果是学生、研究员或内容创作者，</strong>需要对少量、高度聚焦的文献进行深度分析，

@@ -94,7 +94,7 @@ export default function TeslaOptimusAnalysisPage() {
               在Optimus项目中，这种思维方式同样清晰可见。
             </p>
 
-            <Card className="my-8 bg-red-50 border-red-200">
+            <Card className="my-8 bg-red-900/20 border-red-500/30">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-red-900 mb-3 flex items-center gap-2">
                   <Target className="h-5 w-5" />
@@ -126,7 +126,7 @@ export default function TeslaOptimusAnalysisPage() {
                   人形机器人可以直接使用现有的工具、设备和环境，无需重新改造。
                 </p>
                 
-                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                <div className="bg-slate-700/30 p-4 rounded-lg mb-4">
                   <h4 className="font-semibold mb-2">产品思维分析：</h4>
                   <p className="text-sm text-gray-700">
                     这是典型的"兼容性优先"策略。虽然在特定任务上可能不是最优解，
@@ -162,7 +162,7 @@ export default function TeslaOptimusAnalysisPage() {
                   这种"AI优先"的思路体现了软件公司的基因。
                 </p>
                 
-                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                <div className="bg-slate-700/30 p-4 rounded-lg mb-4">
                   <h4 className="font-semibold mb-2">技术路径对比：</h4>
                   <div className="grid md:grid-cols-2 gap-4 text-sm">
                     <div>
@@ -203,7 +203,7 @@ export default function TeslaOptimusAnalysisPage() {
                   可能是必要的选择。
                 </p>
                 
-                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                <div className="bg-slate-700/30 p-4 rounded-lg mb-4">
                   <h4 className="font-semibold mb-2">整合层级：</h4>
                   <div className="space-y-2 text-sm text-gray-700">
                     <div className="flex justify-between">
@@ -302,7 +302,7 @@ export default function TeslaOptimusAnalysisPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Card className="p-6 bg-blue-50 border-blue-200">
+              <Card className="p-6 bg-slate-700/30 border-purple-500/30">
                 <h4 className="font-semibold text-blue-800 mb-3 flex items-center gap-2">
                   <TrendingUp className="h-5 w-5" />
                   技术趋势
@@ -315,7 +315,7 @@ export default function TeslaOptimusAnalysisPage() {
                 </ul>
               </Card>
 
-              <Card className="p-6 bg-green-50 border-green-200">
+              <Card className="p-6 bg-green-900/20 border-green-500/30">
                 <h4 className="font-semibold text-green-800 mb-3 flex items-center gap-2">
                   <Zap className="h-5 w-5" />
                   商业模式

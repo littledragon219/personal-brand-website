@@ -184,7 +184,7 @@ export default function HomePage() {
                     <Brain className="w-8 h-8 text-teal-400" />
                   </div>
                   <div>
-                    <h1 className="text-2xl font-bold text-white">曾德荣 / CHIN TECK WENG</h1>
+                    <h1 className="text-2xl font-bold text-white">littledragon</h1>
                     <p className="text-teal-400">具身智能探索者与构建者</p>
                   </div>
                 </div>
@@ -255,7 +255,7 @@ export default function HomePage() {
                     className="border-teal-400/50 text-teal-300 hover:bg-teal-500/20 hover:border-teal-400 transform hover:scale-105 transition-all duration-200" 
                     asChild
                   >
-                    <Link href="/resume.pdf" target="_blank">
+                    <Link href="/简历resume2.pdf" target="_blank">
                       <Download className="mr-2 h-4 w-4" /> 下载PDF简历
                     </Link>
                   </Button>
@@ -413,7 +413,7 @@ export default function HomePage() {
             <div className="max-w-4xl mx-auto text-center space-y-6">
               <h2 className="text-3xl font-bold text-white mb-8">我是谁</h2>
               <p className="text-lg text-gray-300 leading-relaxed">
-                你好，我是<strong className="text-teal-400">曾德荣</strong>。一名来自马来西亚，现就读西安交通大学大四本科机械工程（智能制造），也是一位热情的AI产品探索者。
+                你好，我是<strong className="text-teal-400">littledragon</strong>。一名来自马来西亚，现就读西安交通大学大四本科机械工程（智能制造），也是一位热情的AI产品探索者。
                 我着迷于将前沿AI技术融入物理实体，创造真正有用的智能工具。从机械故障诊断的深度学习到智能无损抓取机械臂的算法开发，
                 我始终在探索"具身智能"的无限可能。
               </p>
@@ -521,10 +521,10 @@ export default function HomePage() {
                   },
                   {
                     badge: "行业分析",
-                    date: "2024.01.01",
-                    title: "拆解特斯拉Optimus的产品迭代路径",
-                    desc: "从产品经理的角度分析特斯拉人形机器人的设计理念、技术选型和商业化策略...",
-                    link: "/explorations/tesla-optimus-analysis"
+                    date: "2024.01.25",
+                    title: "面向工业4.0的西门子Opcenter系统分析报告",
+                    desc: "深度分析Siemens Opcenter MES系统架构、功能模块与实际运行案例，验证其在生产绩效提升上的价值...",
+                    link: "/explorations/industry-4-analysis"
                   }
                 ].map((item, index) => (
                   <Card key={index} className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer group border border-teal-500/30 bg-slate-800/50 backdrop-blur-sm shadow-md">

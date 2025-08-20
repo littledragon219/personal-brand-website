@@ -22,7 +22,7 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="font-bold text-xl text-teal-400 hover:text-teal-300 transition-colors">
-            曾德荣
+            littledragon
           </Link>
 
           {/* Desktop Navigation */}

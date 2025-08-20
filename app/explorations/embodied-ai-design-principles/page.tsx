@@ -94,7 +94,7 @@ export default function EmbodiedAIDesignPrinciplesPage() {
               这种"具身性"带来了独特的设计挑战：如何让数字智能在物理约束下发挥最大价值？
             </p>
 
-            <Card className="my-8 bg-blue-50 border-blue-200">
+            <Card className="my-8 bg-slate-700/30 border-purple-500/30">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-blue-900 mb-3 flex items-center gap-2">
                   <Lightbulb className="h-5 w-5" />
@@ -125,7 +125,7 @@ export default function EmbodiedAIDesignPrinciplesPage() {
                   好的设计应该让用户能够直观地理解产品的工作原理和操作方式。
                 </p>
                 
-                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                <div className="bg-slate-700/30 p-4 rounded-lg mb-4">
                   <h4 className="font-semibold mb-2">实践案例：机械臂的力反馈设计</h4>
                   <p className="text-sm text-gray-700">
                     在我的项目中，我设计了一个简单的LED指示系统：绿色表示安全抓取，
@@ -161,7 +161,7 @@ export default function EmbodiedAIDesignPrinciplesPage() {
                   这不仅是技术问题，更是用户信任的基础。
                 </p>
                 
-                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                <div className="bg-slate-700/30 p-4 rounded-lg mb-4">
                   <h4 className="font-semibold mb-2">实践案例：多层容错机制</h4>
                   <p className="text-sm text-gray-700">
                     我在机械臂中设计了三层容错机制：传感器层面的数据融合、
@@ -196,7 +196,7 @@ export default function EmbodiedAIDesignPrinciplesPage() {
                   它们需要在使用过程中不断优化性能，适应新的环境和任务需求。
                 </p>
                 
-                <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                <div className="bg-slate-700/30 p-4 rounded-lg mb-4">
                   <h4 className="font-semibold mb-2">实践案例：自适应力控参数</h4>
                   <p className="text-sm text-gray-700">
                     机械臂在处理不同物体时会自动调整力控参数，并记录成功的参数组合。
@@ -223,12 +223,12 @@ export default function EmbodiedAIDesignPrinciplesPage() {
             </p>
 
             <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <Card className="text-center p-4 bg-blue-50 border-blue-200">
+              <Card className="text-center p-4 bg-slate-700/30 border-purple-500/30">
                 <Target className="h-8 w-8 text-blue-600 mx-auto mb-2" />
                 <h4 className="font-semibold text-blue-800">直观性</h4>
                 <p className="text-sm text-blue-700">降低使用门槛</p>
               </Card>
-              <Card className="text-center p-4 bg-green-50 border-green-200">
+              <Card className="text-center p-4 bg-green-900/20 border-green-500/30">
                 <Zap className="h-8 w-8 text-green-600 mx-auto mb-2" />
                 <h4 className="font-semibold text-green-800">可靠性</h4>
                 <p className="text-sm text-green-700">建立用户信任</p>

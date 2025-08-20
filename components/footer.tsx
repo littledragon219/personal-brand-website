@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="font-bold text-lg text-teal-400">曾德荣</h3>
+            <h3 className="font-bold text-lg text-teal-400">littledragon</h3>
             <p className="text-gray-400 text-sm">
               物理世界与数字智能的连接者
             </p>
@@ -55,7 +55,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-teal-500/30 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2025 曾德荣. 保留所有权利.</p>
+          <p>&copy; 2025 littledragon. 保留所有权利.</p>
         </div>
       </div>
     </footer>
