@@ -1,6 +1,16 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/explorations/google-notebooklm-review/page": "app/explorations/google-notebooklm-review/page.js",
+  "/explorations/embodied-ai-design-principles/page": "app/explorations/embodied-ai-design-principles/page.js",
   "/explorations/page": "app/explorations/page.js",
-  "/explorations/google-notebooklm-review/page": "app/explorations/google-notebooklm-review/page.js"
+  "/explorations/gpt4o-robot-planning/page": "app/explorations/gpt4o-robot-planning/page.js",
+  "/explorations/gqtea-analysis/page": "app/explorations/gqtea-analysis/page.js",
+  "/explorations/industry-4-analysis/page": "app/explorations/industry-4-analysis/page.js",
+  "/explorations/tesla-optimus-analysis/page": "app/explorations/tesla-optimus-analysis/page.js",
+  "/projects/intelligent-grasping-robot/page": "app/projects/intelligent-grasping-robot/page.js",
+  "/page": "app/page.js",
+  "/projects/page": "app/projects/page.js"
 }

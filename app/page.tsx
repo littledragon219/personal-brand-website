@@ -490,6 +490,28 @@ export default function HomePage() {
                   </CardContent>
                 </div>
               </Card>
+
+              <Card className="bg-slate-800/50 backdrop-blur-sm border border-teal-500/30 rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-teal-400/20 mt-8">
+                <Image src="/futureu.png" alt="FutureU" width={800} height={450} className="w-full h-48 object-cover" />
+                <CardContent className="p-6">
+                  <CardHeader className="p-0 mb-4">
+                    <CardTitle className="text-2xl font-bold text-white">FutureU 你的AI产品经理面试训练</CardTitle>
+                    <CardDescription className="text-gray-400">
+                      AI 协作与产品开发逻辑的实践
+                    </CardDescription>
+                  </CardHeader>
+                  <p className="text-gray-300 leading-relaxed mb-6">
+                    在开发面试助训产品的过程中，我不仅积累了工具选用、代码管理与项目部署的实操经验，更在与 AI 协作、产品开发逻辑的碰撞中，沉淀了许多关于效率、决策与质量平衡的深层思考。
+                  </p>
+                  <div className="flex justify-end">
+                    <Button className="bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white transform hover:scale-105 transition-all duration-200" asChild>
+                      <Link href="/projects/futureu-summary">
+                        查看学习收获总结 <ArrowRight className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
