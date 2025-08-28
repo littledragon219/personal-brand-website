@@ -497,11 +497,11 @@ export default function HomePage() {
                   <CardHeader className="p-0 mb-4">
                     <CardTitle className="text-2xl font-bold text-white">FutureU 你的AI产品经理面试训练</CardTitle>
                     <CardDescription className="text-gray-400">
-                      AI 协作与产品开发逻辑的实践
+                      www.teckweng.shop
                     </CardDescription>
                   </CardHeader>
                   <p className="text-gray-300 leading-relaxed mb-6">
-                    在开发面试助训产品的过程中，我不仅积累了工具选用、代码管理与项目部署的实操经验，更在与 AI 协作、产品开发逻辑的碰撞中，沉淀了许多关于效率、决策与质量平衡的深层思考。
+                    是一个集 练习、评估、分析、提升 于一体的综合性职业发展平台，为用户提供沉浸式面试体验以及生成深度、多维度的能力评估报告和个性化的提升建议，从而帮助用户在求职过程中脱颖而出。
                   </p>
                   <div className="flex justify-end">
                     <Button className="bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white transform hover:scale-105 transition-all duration-200" asChild>

@@ -123,15 +123,31 @@ export default function GPT4oRobotPlanningPage() {
               并生成相应的执行步骤。
             </p>
 
-            <div className="bg-slate-700/30 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-white mb-3">示例对话：</h4>
-              <div className="space-y-3">
-                <div className="bg-slate-700/50 p-3 rounded border-l-4 border-purple-500">
-                  <strong className="text-gray-300">用户：</strong><span className="text-gray-300">桌面上有红色玻璃杯、蓝色塑料瓶、绿色苹果，请规划抓取顺序</span>
+            <div className="bg-slate-800/50 rounded-lg mb-6 overflow-hidden border border-purple-500/30">
+              <div className="p-4 bg-slate-900/70">
+                <h4 className="font-semibold text-white flex items-center gap-2">
+                  <MessageCircle className="h-5 w-5 text-purple-400" />
+                  <span>与GPT-4o的规划对话</span>
+                </h4>
+              </div>
+              <div className="p-6 space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-slate-700 flex-shrink-0 flex items-center justify-center font-bold text-purple-400">U</div>
+                  <div className="bg-slate-700/50 p-3 rounded-lg rounded-tl-none border border-slate-600">
+                    <p className="text-gray-300">桌面上有红色玻璃杯、蓝色塑料瓶、绿色苹果，请规划抓取顺序。</p>
+                  </div>
                 </div>
-                <div className="bg-slate-700/50 p-3 rounded border-l-4 border-green-500">
-                  <strong className="text-gray-300">GPT-4o：</strong><span className="text-gray-300">建议抓取顺序：1) 绿色苹果（易损但相对安全）2) 红色玻璃杯（最易碎，需要特别小心）3) 蓝色塑料瓶（最稳定）。
-                  每次抓取前都要调整力控参数...</span>
+                <div className="flex items-start gap-3 justify-end">
+                  <div className="bg-purple-500/20 p-3 rounded-lg rounded-br-none border border-purple-500/50 text-right">
+                    <p className="text-gray-300">建议抓取顺序：</p>
+                    <ol className="list-decimal list-inside text-left mt-2 text-gray-300">
+                      <li>绿色苹果 (易损但相对安全)</li>
+                      <li>红色玻璃杯 (最易碎，需要特别小心)</li>
+                      <li>蓝色塑料瓶 (最稳定)</li>
+                    </ol>
+                    <p className="text-purple-300 mt-2 text-sm">每次抓取前都要调整力控参数...</p>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-purple-900 flex-shrink-0 flex items-center justify-center font-bold text-white">G</div>
                 </div>
               </div>
             </div>

@@ -10,6 +10,18 @@ import { BackgroundEffects } from "@/components/background-effects"
 export default function ProjectsPage() {
   const projects = [
     {
+      id: "futureu",
+      title: "FutureU 你的AI产品经理面试训练",
+      description: "是一个集 练习、评估、分析、提升 于一体的综合性职业发展平台，为用户提供沉浸式面试体验以及生成深度、多维度的能力评估报告和个性化的提升建议，从而帮助用户在求职过程中脱颖而出。",
+      image: "/futureu.png",
+      tags: ["AI产品", "面试助教", "Next.js", "Tailwind CSS", "Vercel"],
+      status: "核心项目",
+      achievements: ["快速原型", "敏捷开发", "用户驱动"],
+      role: "产品负责人 & 全栈开发",
+      gradient: "from-teal-500/20 to-cyan-500/20",
+      link: "/projects/futureu-summary"
+    },
+    {
       id: "intelligent-grasping-robot",
       title: "智能无损抓取机械臂",
       description: '"触觉感知-柔性控制-特征迁移"三位一体系统',
@@ -151,7 +163,7 @@ export default function ProjectsPage() {
               </div>
             </ScrollReveal>
 
-            {/* Featured Project */}
+            {/* Featured Projects */}
             <ScrollReveal delay={200}>
               <section className="mb-16">
                 <div className="flex items-center gap-4 mb-8">
@@ -159,66 +171,130 @@ export default function ProjectsPage() {
                   <Badge className="bg-gradient-to-r from-[#00FFC2] to-teal-500 text-black">重点推荐</Badge>
                 </div>
                 
-                <Card className="overflow-hidden bg-black/60 backdrop-blur-sm border border-[#00FFC2]/30 hover:border-[#00FFC2]/50 transition-all duration-300 group shadow-2xl">
-                  <div className="grid lg:grid-cols-2">
-                    <div className="relative h-64 lg:h-full overflow-hidden">
-                      <Image
-                        src="/intelligent-grasping-robot.png"
-                        alt="智能无损抓取机械臂"
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#00FFC2]/20 to-transparent" />
-                    </div>
-                    <CardContent className="p-8 flex flex-col justify-center">
-                      <CardHeader className="p-0 mb-6">
-                        <CardTitle className="text-2xl text-white group-hover:text-[#00FFC2] transition-colors">
-                          智能无损抓取机械臂
-                        </CardTitle>
-                        <CardDescription className="text-base text-[#00FFC2]">
-                          我的代表作品 - "触觉感知-柔性控制-特征迁移"三位一体系统
-                        </CardDescription>
-                      </CardHeader>
-                      
-                      <div className="space-y-4 mb-6">
-                        <p className="text-gray-300">
-                          研发"触觉感知-柔性控制-特征迁移"三位一体系统，配合树莓派主控与舵机协同，
-                          开发动态闭环力控算法实时感知物体，以0.01N的力控分辨率实现精准控制达到智能无损抓取。
-                        </p>
-                        
-                        <div className="space-y-2">
-                          <h4 className="font-semibold text-white">核心成果：</h4>
-                          <ul className="text-sm text-gray-300 space-y-1">
-                            <li>• 0.01N的力控分辨率，92.5%无损抓取成功率</li>
-                            <li>• 获得2025年大学生创新大赛校赛银奖</li>
-                            <li>• 获得学院科研训练项目92分高分</li>
-                          </ul>
-                        </div>
-                        
-                        <div className="flex flex-wrap gap-2">
-                          {["力控算法", "原型网络", "零样本推理", "树莓派"].map((tag, index) => (
-                            <Badge key={index} variant="outline" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 transition-colors">
-                              {tag}
-                            </Badge>
-                          ))}
-                        </div>
+                <div className="space-y-8">
+                  {/* FutureU Project */}
+                  <Card className="overflow-hidden bg-black/60 backdrop-blur-sm border border-[#00FFC2]/30 hover:border-[#00FFC2]/50 transition-all duration-300 group shadow-2xl">
+                    <div className="grid lg:grid-cols-2">
+                      <div className="relative h-64 lg:h-full overflow-hidden">
+                        <Image
+                          src="/futureu.png"
+                          alt="FutureU 你的AI产品经理面试训练"
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#00FFC2]/20 to-transparent" />
                       </div>
+                      <CardContent className="p-8 flex flex-col justify-center">
+                        <CardHeader className="p-0 mb-6">
+                          <CardTitle className="text-2xl text-white group-hover:text-[#00FFC2] transition-colors">
+                            FutureU 你的AI产品经理面试训练
+                          </CardTitle>
+                          <CardDescription className="text-base text-[#00FFC2]">
+                            我的核心产品 - 集练习、评估、分析、提升于一体的综合性职业发展平台
+                          </CardDescription>
+                        </CardHeader>
+                        
+                        <div className="space-y-4 mb-6">
+                          <p className="text-gray-300">
+                            是一个集 练习、评估、分析、提升 于一体的综合性职业发展平台，为用户提供沉浸式面试体验以及生成深度、多维度的能力评估报告和个性化的提升建议，从而帮助用户在求职过程中脱颖而出。
+                          </p>
+                          
+                          <div className="space-y-2">
+                            <h4 className="font-semibold text-white">核心成果：</h4>
+                            <ul className="text-sm text-gray-300 space-y-1">
+                              <li>• 快速原型开发，敏捷迭代优化</li>
+                              <li>• 用户驱动的产品设计理念</li>
+                              <li>• 完整的产品开发与部署流程</li>
+                            </ul>
+                          </div>
+                          
+                          <div className="flex flex-wrap gap-2">
+                            {["AI产品", "面试助教", "Next.js", "Tailwind CSS"].map((tag, index) => (
+                              <Badge key={index} variant="outline" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 transition-colors">
+                                {tag}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
 
-                      <div className="flex gap-3">
-                        <Button className="bg-gradient-to-r from-[#00FFC2] to-teal-500 hover:from-[#00FFC2]/80 hover:to-teal-600 text-black transform hover:scale-105 transition-all duration-200" asChild>
-                          <Link href="/projects/intelligent-grasping-robot">
-                            详细案例分析 <ArrowRight className="ml-2 h-4 w-4" />
-                          </Link>
-                        </Button>
-                        <Button variant="outline" size="sm" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 hover:border-[#00FFC2] transition-colors" asChild>
-                          <Link href="https://github.com" target="_blank">
-                            <Github className="mr-2 h-4 w-4" /> 代码
-                          </Link>
-                        </Button>
+                        <div className="flex gap-3">
+                          <Button className="bg-gradient-to-r from-[#00FFC2] to-teal-500 hover:from-[#00FFC2]/80 hover:to-teal-600 text-black transform hover:scale-105 transition-all duration-200" asChild>
+                            <Link href="/projects/futureu-summary">
+                              查看学习收获总结 <ArrowRight className="ml-2 h-4 w-4" />
+                            </Link>
+                          </Button>
+                          <Button variant="outline" size="sm" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 hover:border-[#00FFC2] transition-colors" asChild>
+                            <Link href="https://www.teckweng.shop" target="_blank">
+                              <ExternalLink className="mr-2 h-4 w-4" /> 访问网站
+                            </Link>
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </div>
+                  </Card>
+
+                  {/* Intelligent Grasping Robot Project */}
+                  <Card className="overflow-hidden bg-black/60 backdrop-blur-sm border border-[#00FFC2]/30 hover:border-[#00FFC2]/50 transition-all duration-300 group shadow-2xl">
+                    <div className="grid lg:grid-cols-2">
+                      <div className="relative h-64 lg:h-full overflow-hidden">
+                        <Image
+                          src="/intelligent-grasping-robot.png"
+                          alt="智能无损抓取机械臂"
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#00FFC2]/20 to-transparent" />
                       </div>
-                    </CardContent>
-                  </div>
-                </Card>
+                      <CardContent className="p-8 flex flex-col justify-center">
+                        <CardHeader className="p-0 mb-6">
+                          <CardTitle className="text-2xl text-white group-hover:text-[#00FFC2] transition-colors">
+                            智能无损抓取机械臂
+                          </CardTitle>
+                          <CardDescription className="text-base text-[#00FFC2]">
+                            我的代表作品 - "触觉感知-柔性控制-特征迁移"三位一体系统
+                          </CardDescription>
+                        </CardHeader>
+                        
+                        <div className="space-y-4 mb-6">
+                          <p className="text-gray-300">
+                            研发"触觉感知-柔性控制-特征迁移"三位一体系统，配合树莓派主控与舵机协同，
+                            开发动态闭环力控算法实时感知物体，以0.01N的力控分辨率实现精准控制达到智能无损抓取。
+                          </p>
+                          
+                          <div className="space-y-2">
+                            <h4 className="font-semibold text-white">核心成果：</h4>
+                            <ul className="text-sm text-gray-300 space-y-1">
+                              <li>• 0.01N的力控分辨率，92.5%无损抓取成功率</li>
+                              <li>• 获得2025年大学生创新大赛校赛银奖</li>
+                              <li>• 获得学院科研训练项目92分高分</li>
+                            </ul>
+                          </div>
+                          
+                          <div className="flex flex-wrap gap-2">
+                            {["力控算法", "原型网络", "零样本推理", "树莓派"].map((tag, index) => (
+                              <Badge key={index} variant="outline" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 transition-colors">
+                                {tag}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+
+                        <div className="flex gap-3">
+                          <Button className="bg-gradient-to-r from-[#00FFC2] to-teal-500 hover:from-[#00FFC2]/80 hover:to-teal-600 text-black transform hover:scale-105 transition-all duration-200" asChild>
+                            <Link href="/projects/intelligent-grasping-robot">
+                              详细案例分析 <ArrowRight className="ml-2 h-4 w-4" />
+                            </Link>
+                          </Button>
+                          <Button variant="outline" size="sm" className="border-[#00FFC2]/50 text-[#00FFC2] hover:bg-[#00FFC2]/20 hover:border-[#00FFC2] transition-colors" asChild>
+                            <Link href="https://github.com" target="_blank">
+                              <Github className="mr-2 h-4 w-4" /> 代码
+                            </Link>
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </div>
+                  </Card>
+                </div>
               </section>
             </ScrollReveal>
 

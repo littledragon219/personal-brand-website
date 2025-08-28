@@ -1,140 +1,80 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/app/_not-found/page-4d96aade42349dbc.js"
-    ],
     "/layout": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/css/9198ee3a2eaf461a.css",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/app/layout-2e958e8477683baf.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
-    "/blog/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/app/blog/page-64131204f39ca5ff.js"
-    ],
-    "/about/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/app/about/page-2d460d621b80d301.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/app/contact/page-7f7b248a6e9d0e13.js"
-    ],
-    "/explorations/google-notebooklm-review/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/app/explorations/google-notebooklm-review/page-2a3165ccfa556629.js"
-    ],
-    "/explorations/embodied-ai-design-principles/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/app/explorations/embodied-ai-design-principles/page-25ad2f1c65e802ff.js"
-    ],
-    "/explorations/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/63-04d47279032edac6.js",
-      "static/chunks/app/explorations/page-dcbef8b00dd1fbf1.js"
-    ],
-    "/explorations/gpt4o-robot-planning/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/app/explorations/gpt4o-robot-planning/page-3fd3f6463b6a08a3.js"
-    ],
-    "/explorations/gqtea-analysis/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/18-c7abbdbaedea21a1.js",
-      "static/chunks/app/explorations/gqtea-analysis/page-d9646322ab523b2d.js"
-    ],
-    "/explorations/industry-4-analysis/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/18-c7abbdbaedea21a1.js",
-      "static/chunks/app/explorations/industry-4-analysis/page-4268be87988c94ba.js"
-    ],
-    "/explorations/tesla-optimus-analysis/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/app/explorations/tesla-optimus-analysis/page-c83d26806d9e9567.js"
-    ],
-    "/projects/intelligent-grasping-robot/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/63-04d47279032edac6.js",
-      "static/chunks/app/projects/intelligent-grasping-robot/page-a213a85bd69516cb.js"
+    "/projects/futureu-summary/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/projects/futureu-summary/page.js"
     ],
     "/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/758-dd4b4e6883302e41.js",
-      "static/chunks/63-04d47279032edac6.js",
-      "static/chunks/app/page-edb175f69f834ba4.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/projects/page": [
-      "static/chunks/webpack-fc00d7502eeea76d.js",
-      "static/chunks/4bd1b696-7a69eb9ed403e59d.js",
-      "static/chunks/684-f7d1943981add89a.js",
-      "static/chunks/main-app-e6f5118bc4e5be69.js",
-      "static/chunks/874-ef21065d78760fdb.js",
-      "static/chunks/63-04d47279032edac6.js",
-      "static/chunks/app/projects/page-c33a85790fbf18d5.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/projects/page.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/page.js"
+    ],
+    "/explorations/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/explorations/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
+    ],
+    "/projects/intelligent-grasping-robot/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/projects/intelligent-grasping-robot/page.js"
+    ],
+    "/explorations/embodied-ai-design-principles/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/explorations/embodied-ai-design-principles/page.js"
+    ],
+    "/explorations/google-notebooklm-review/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/explorations/google-notebooklm-review/page.js"
+    ],
+    "/explorations/gpt4o-robot-planning/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/explorations/gpt4o-robot-planning/page.js"
+    ],
+    "/explorations/gqtea-analysis/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/explorations/gqtea-analysis/page.js"
+    ],
+    "/explorations/industry-4-analysis/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/explorations/industry-4-analysis/page.js"
+    ],
+    "/explorations/tesla-optimus-analysis/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/explorations/tesla-optimus-analysis/page.js"
+    ],
+    "/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/page.js"
     ]
   }
 }

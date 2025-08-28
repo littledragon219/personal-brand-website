@@ -110,111 +110,47 @@ export default function EmbodiedAIDesignPrinciplesPage() {
 
             <h2 className="text-2xl font-bold text-white mb-6">三个核心设计原则</h2>
 
-            {/* Principle 1 */}
-            <Card className="mb-8 border-l-4 border-blue-500 bg-slate-800/50">
-              <CardHeader>
-                <CardTitle className="text-xl text-blue-300 flex items-center gap-3">
-                  <div className="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center">
-                    <span className="font-bold text-blue-300">1</span>
-                  </div>
-                  直观性原则：让复杂技术变得简单易懂
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300 mb-4">
-                  具身智能产品往往涉及复杂的算法和传感器，但用户不应该感受到这种复杂性。
-                  好的设计应该让用户能够直观地理解产品的工作原理和操作方式。
-                </p>
-                
-                <div className="bg-slate-700/50 p-4 rounded-lg mb-4">
-                  <h4 className="font-semibold mb-2 text-white">实践案例：机械臂的力反馈设计</h4>
-                  <p className="text-sm text-gray-300">
-                    在我的项目中，我设计了一个简单的LED指示系统：绿色表示安全抓取，
-                    黄色表示需要调整，红色表示停止。这种视觉反馈让操作者能够立即理解机械臂的状态，
-                    无需了解复杂的力控算法。
-                  </p>
-                </div>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Principle 1 */}
+              <Card className="bg-slate-800/50 border-blue-500/50 transform hover:-translate-y-2 transition-transform duration-300">
+                <CardHeader>
+                  <CardTitle className="text-blue-300 flex items-center gap-3">
+                    <Zap className="h-6 w-6" />
+                    直观性
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-400 text-sm mb-4">让复杂技术变得简单易懂，用户无需了解底层算法就能直观操作。</p>
+                </CardContent>
+              </Card>
 
-                <h4 className="font-semibold mb-2 text-white">设计要点：</h4>
-                <ul className="list-disc pl-6 text-gray-300">
-                  <li>使用熟悉的交互模式</li>
-                  <li>提供清晰的状态反馈</li>
-                  <li>隐藏技术复杂性</li>
-                  <li>建立用户心理模型</li>
-                </ul>
-              </CardContent>
-            </Card>
+              {/* Principle 2 */}
+              <Card className="bg-slate-800/50 border-green-500/50 transform hover:-translate-y-2 transition-transform duration-300">
+                <CardHeader>
+                  <CardTitle className="text-green-300 flex items-center gap-3">
+                    <Target className="h-6 w-6" />
+                    可靠性
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-400 text-sm mb-4">在充满不确定性的物理世界中保持稳定性能，建立用户信任。</p>
+                </CardContent>
+              </Card>
 
-            {/* Principle 2 */}
-            <Card className="mb-8 border-l-4 border-green-500 bg-slate-800/50">
-              <CardHeader>
-                <CardTitle className="text-xl text-green-300 flex items-center gap-3">
-                  <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center">
-                    <span className="font-bold text-green-300">2</span>
-                  </div>
-                  可靠性原则：在不确定中保持稳定
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300 mb-4">
-                  物理世界充满了不确定性：传感器噪声、环境变化、机械磨损等。
-                  具身智能产品必须在这些不确定性中保持稳定可靠的性能。
-                  这不仅是技术问题，更是用户信任的基础。
-                </p>
-                
-                <div className="bg-slate-700/50 p-4 rounded-lg mb-4">
-                  <h4 className="font-semibold mb-2 text-white">实践案例：多层容错机制</h4>
-                  <p className="text-sm text-gray-300">
-                    我在机械臂中设计了三层容错机制：传感器层面的数据融合、
-                    算法层面的异常检测、系统层面的安全停机。当任何一层检测到异常时，
-                    系统都能优雅地降级或停止，而不是突然失效。
-                  </p>
-                </div>
+              {/* Principle 3 */}
+              <Card className="bg-slate-800/50 border-purple-500/50 transform hover:-translate-y-2 transition-transform duration-300">
+                <CardHeader>
+                  <CardTitle className="text-purple-300 flex items-center gap-3">
+                    <Lightbulb className="h-6 w-6" />
+                    适应性
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-400 text-sm mb-4">产品应能学习和适应新环境、新任务，与用户共同进化。</p>
+                </CardContent>
+              </Card>
+            </div>
 
-                <h4 className="font-semibold mb-2 text-white">设计要点：</h4>
-                <ul className="list-disc pl-6 text-gray-300">
-                  <li>建立多层容错机制</li>
-                  <li>设计优雅的降级策略</li>
-                  <li>实现预测性维护</li>
-                  <li>提供透明的错误信息</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Principle 3 */}
-            <Card className="mb-8 border-l-4 border-purple-500 bg-slate-800/50">
-              <CardHeader>
-                <CardTitle className="text-xl text-purple-300 flex items-center gap-3">
-                  <div className="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center">
-                    <span className="font-bold text-purple-300">3</span>
-                  </div>
-                  适应性原则：与环境共同进化
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300 mb-4">
-                  优秀的具身智能产品不应该是静态的，而应该能够学习和适应。
-                  它们需要在使用过程中不断优化性能，适应新的环境和任务需求。
-                </p>
-                
-                <div className="bg-slate-700/50 p-4 rounded-lg mb-4">
-                  <h4 className="font-semibold mb-2 text-white">实践案例：自适应力控参数</h4>
-                  <p className="text-sm text-gray-300">
-                    机械臂在处理不同物体时会自动调整力控参数，并记录成功的参数组合。
-                    通过这种方式，系统在处理相似物体时会变得越来越精准，
-                    真正实现了"越用越聪明"的效果。
-                  </p>
-                </div>
-
-                <h4 className="font-semibold mb-2 text-white">设计要点：</h4>
-                <ul className="list-disc pl-6 text-gray-300">
-                  <li>实现在线学习能力</li>
-                  <li>建立用户行为模型</li>
-                  <li>支持个性化定制</li>
-                  <li>保持系统开放性</li>
-                </ul>
-              </CardContent>
-            </Card>
 
             <h2 className="text-2xl font-bold text-white mb-4">原则间的协同效应</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
@@ -361,15 +297,15 @@ export default function EmbodiedAIDesignPrinciplesPage() {
 
               <Card className="bg-slate-800/50 border-gray-700 hover:border-[#00FFC2]/50 transition-all cursor-pointer">
                 <CardContent className="p-6">
-                  <Badge variant="secondary" className="mb-3 bg-purple-500/20 text-purple-300 border-purple-500/30">行业分析</Badge>
+                  <Badge variant="secondary" className="mb-3 bg-yellow-500/20 text-yellow-300 border-yellow-500/30">AI工具评测</Badge>
                   <h3 className="font-semibold text-lg mb-2 text-white hover:text-[#00FFC2] transition-colors">
-                    拆解特斯拉Optimus的产品迭代路径
+                    Google NotebookLM全面评测：AI驱动的个性化学习体验
                   </h3>
                   <p className="text-gray-400 text-sm mb-4">
-                    从产品经理角度分析特斯拉机器人策略...
+                    深入探索NotebookLM如何变革我们的学习与研究范式...
                   </p>
                   <Button variant="ghost" size="sm" className="text-gray-400 hover:text-[#00FFC2]" asChild>
-                    <Link href="/explorations/tesla-optimus-analysis">
+                    <Link href="/explorations/google-notebooklm-review">
                       阅读更多 <ArrowRight className="ml-1 h-3 w-3" />
                     </Link>
                   </Button>

@@ -93,62 +93,7 @@ export default function ExplorationsPage() {
       image: "/GQTEA.png",
       gradient: "from-green-500/20 to-emerald-500/20"
     },
-    {
-      id: "tesla-optimus-analysis",
-      title: "拆解特斯拉Optimus的产品迭代路径",
-      excerpt: "从产品经理的角度分析特斯拉人形机器人的设计理念、技术选型和商业化策略。马斯克的产品思维如何在机器人领域得到体现？",
-      category: "行业分析",
-      date: "2024.01.01",
-      readTime: "15分钟",
-      views: 3421,
-      likes: 234,
-      comments: 67,
-      tags: ["特斯拉", "Optimus", "产品分析", "商业策略"],
-      featured: false,
-      gradient: "from-purple-500/20 to-pink-500/20"
-    },
-    {
-      id: "ai-tools-comparison-2024",
-      title: "2024年AI开发工具横向对比",
-      excerpt: "对比分析了当前主流的AI开发工具，包括OpenAI API、Anthropic Claude、Google Gemini等，从开发者角度评估各工具的优劣势...",
-      category: "AI工具评测",
-      date: "2023.12.25",
-      readTime: "10分钟",
-      views: 1876,
-      likes: 123,
-      comments: 45,
-      tags: ["AI工具", "开发", "对比分析", "API"],
-      featured: false,
-      gradient: "from-orange-500/20 to-red-500/20"
-    },
-    {
-      id: "robotics-startup-insights",
-      title: "机器人创业的三个关键洞察",
-      excerpt: "通过观察和分析多家机器人创业公司，我总结出了三个关键洞察：技术壁垒、市场时机、团队配置。每一个都可能决定创业的成败...",
-      category: "创业思考",
-      date: "2023.12.18",
-      readTime: "7分钟",
-      views: 987,
-      likes: 67,
-      comments: 12,
-      tags: ["创业", "机器人", "商业洞察", "团队"],
-      featured: false,
-      gradient: "from-yellow-500/20 to-orange-500/20"
-    },
-    {
-      id: "deep-learning-fault-diagnosis",
-      title: "深度学习在故障诊断中的技术演进",
-      excerpt: "从传统的信号处理方法到现代的深度学习技术，故障诊断领域经历了怎样的技术演进？我将分享在这个领域的技术实践和思考...",
-      category: "技术深度",
-      date: "2023.12.10",
-      readTime: "20分钟",
-      views: 1543,
-      likes: 198,
-      comments: 56,
-      tags: ["深度学习", "故障诊断", "信号处理", "技术演进"],
-      featured: false,
-      gradient: "from-teal-500/20 to-blue-500/20"
-    }
+
   ]
 
   const filteredArticles = articles.filter(article => {
