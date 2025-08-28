@@ -1,8 +1,7 @@
 {
   "/projects/page": "app/projects/page.js",
   "/explorations/embodied-ai-design-principles/page": "app/explorations/embodied-ai-design-principles/page.js",
-  "/explorations/page": "app/explorations/page.js",
+  "/blog/page": "app/blog/page.js",
   "/explorations/gpt4o-robot-planning/page": "app/explorations/gpt4o-robot-planning/page.js",
-  "/explorations/google-notebooklm-review/page": "app/explorations/google-notebooklm-review/page.js",
-  "/blog/page": "app/blog/page.js"
+  "/explorations/google-notebooklm-review/page": "app/explorations/google-notebooklm-review/page.js"
 }
